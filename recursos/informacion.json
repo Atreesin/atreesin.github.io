@@ -1,1 +1,591 @@
+{
+    "persona": [
+        {
+            "foto_perfil": {
+                "large": "perfil-large0.jpg",
+                "medium": "perfil-medium0.jpg",
+                "thumbnail": "perfil-thumbnail0.jpg"
+            },
+            "nombre_apellido": {
+                "nombre": "Ana",
+                "apellido": "López"
+            },
+            "ocupacion": "Gerente de sucursal",
+            "direccion": {
+                "calle": {
+                    "nombre": "Av. Rivadavia",
+                    "numero": 4623
+                },
+                "codigo_postal": "1706",
+                "localidad": "Haedo"
+            },
+            "telefono": "(433) 838-2889",
+            "email": "ana.lopez@ejemplo.com",
+            "fecha_nacimiento": "2/1/1971",
+            "nacionalidad": "Ar",
+            "habilidades": [
+                {
+                    "habilidad": "Atención al cliente",
+                    "nivel": "80%"
+                },
+                {
+                    "habilidad": "Organización",
+                    "nivel": "90%"
+                },
+                {
+                    "habilidad": "Manejo de estrés",
+                    "nivel": "100%"
+                },
+                {
+                    "habilidad": "Liderazgo",
+                    "nivel": "50%"
+                }
+            ],
+            "software": [
+                {
+                    "software": "Excel",
+                    "nivel": "100%"
+                },
+                {
+                    "software": "Word",
+                    "nivel": "60%"
+                },
+                {
+                    "software": "access",
+                    "nivel": "50%"
+                }
+                
+            ],
+            "idiomas": [
+                {
+                    "idioma": "Inglés",
+                    "nivel": "100%"
+                },
+                {
+                    "idioma": "Francés",
+                    "nivel": "50%"
+                },
+                {
+                    "idioma": "Alemán",
+                    "nivel": "10%"
+                }
+            ],
+            "perfil_laboral": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis sem pharetra, semper arcu tincidunt, facilisis quam. Maecenas posuere nulla nec risus blandit volutpat. Suspendisse tincidunt, tortor ac porttitor vehicula, est dolor accumsan mauris, fermentum rutrum massa tellus in arcu. Integer iaculis urna sed nisi convallis, nec tincidunt orci posuere. Sed non dolor eu sapien viverra egestas ac sit amet nibh. Phasellus semper enim id nunc suscipit dictum. Aliquam auctor ipsum quis risus vulputate auctor. Aliquam erat volutpat. Nunc sodales purus quis lectus condimentum malesuada. Morbi varius ultricies ultricies. Ut est ex, aliquam ac posuere id, cursus in neque. Donec at quam egestas, posuere magna id, semper tellus. Curabitur et eleifend magna. Donec id rhoncus nisl.",
+            "experiencia": [
+                {
+                    "fecha_inicio": "2020",
+                    "fecha_fin": false,
+                    "puesto": "Gerente de sucursal",
+                    "empresa": "Banco Santander (Haedo)",
+                    "descripcion": "Proin vestibulum facilisis est sed eleifend. Curabitur lobortis ut augue sed aliquam."
+                },
+                {
+                    "fecha_inicio": "2015",
+                    "fecha_fin": "2020",
+                    "puesto": "Secretaria gerencial",
+                    "empresa": "Oracle Co.",
+                    "descripcion": "Pellentesque vel nisl quis urna iaculis porttitor vitae vitae tellus. Curabitur fringilla lorem id fermentum gravida."
+                },
+                {
+                    "fecha_inicio": "2005",
+                    "fecha_fin": "2014",
+                    "puesto": "Cajera",
+                    "empresa": "McDonalds",
+                    "descripcion": "Nam rutrum et erat vel accumsan. Quisque eu porta ante."
+                }
+            ],
+            "educacion": [
+                {
+                    "titulo": "Licenciatura en Administración",
+                    "fecha_inicio": "2012",
+                    "fecha_fin": "2018",
+                    "instituto": "Universidad Nacional de Quilmes",
+                    "ciudad": "Quilmes"
+                }             
+            ],
+            "certificaciones": [
+                null
+            ],
+            "objetivos_personales": "Curabitur elementum iaculis ullamcorper. Vivamus blandit, metus vitae dictum dictum, nisi neque eleifend orci, suscipit ultrices velit ante ac magna. Proin et dignissim neque. Praesent ipsum ipsum, rhoncus et tristique eu, eleifend eget est. Proin molestie fermentum nibh, vulputate ornare leo accumsan at. Sed consectetur rutrum lorem, ac molestie nisi rhoncus in. Curabitur at est enim. Morbi vulputate facilisis augue, sed iaculis nisi ullamcorper porttitor. Maecenas eu rhoncus massa. Aliquam a metus vitae odio rhoncus mattis nec vitae enim. Nam ac metus vitae mauris auctor dictum eu id risus. Duis consequat sem ac mi dapibus, at tincidunt odio lobortis. Aenean nec ante a tortor dictum viverra."
+        },
+        {
+            "foto_perfil": {
+                "large": "perfil-large1.jpg",
+                "medium": "perfil-medium1.jpg",
+                "thumbnail": "perfil-thumbnail1.jpg"
+            },
+            "nombre_apellido": {
+                "nombre": "Albert",
+                "apellido": "Einstein"
+            },
+            "ocupacion": "Accounting/Auditing",
+            "direccion": {
+                "calle": {
+                    "nombre": "Mercer Street",
+                    "numero": 112
+                },
+                "codigo_postal": "08543",
+                "localidad": "NJ"
+            },
+            "telefono": "+972-2-6585781",
+            "email": "demo@eurocv.eu",
+            "fecha_nacimiento": "14/03/1879",
+            "nacionalidad": "Us",
+            "habilidades": [
+                {
+                    "habilidad": "Atención al cliente",
+                    "nivel": "80%"
+                },
+                {
+                    "habilidad": "Organización",
+                    "nivel": "90%"
+                },
+                {
+                    "habilidad": "Manejo de estrés",
+                    "nivel": "100%"
+                },
+                {
+                    "habilidad": "Liderazgo",
+                    "nivel": ""
+                }
+            ],
+            "software": [
+                {
+                    "software": "",
+                    "nivel": ""
+                },
+                {
+                    "software": "",
+                    "nivel": ""
+                },
+                {
+                    "software": "",
+                    "nivel": ""
+                },
+                {
+                    "software": "",
+                    "nivel": ""
+                }
+            ],
+            "idiomas": [
+                {
+                    "idioma": "Inglés",
+                    "nivel": "100%"
+                },
+                {
+                    "idioma": "Francés",
+                    "nivel": "80%"
+                },
+                {
+                    "idioma": "Italiano",
+                    "nivel": "30%"
+                }
+            ],
+            "perfil_laboral": "theoretical physicist, mathemathics, nobel prize for physics philosopher, politician, formulator of the theory of relativity.",
+            "experiencia": [
+                {
+                    "fecha_inicio": "1932",
+                    "fecha_fin": "1944",
+                    "puesto": "Professor of Theoretical Physics",
+                    "empresa": "Teaching",
+                    "descripcion": "I emigrated to America to take the position of Professor of Theoretical Physics at Princeton (I was formally associated with the Institute for Advanced Study located in Princeton, New Jersey)."
+                },
+                {
+                    "fecha_inicio": "1911",
+                    "fecha_fin": "1932",
+                    "puesto": "Professor of Theoretical Physics",
+                    "empresa": "Teaching",
+                    "descripcion": "I returned to Zurich to fill a similar post."
+                },
+                {
+                    "fecha_inicio": "1908",
+                    "fecha_fin": "1910",
+                    "puesto": "Professor Extraordinary",
+                    "empresa": "Teaching",
+                    "descripcion": "I became Professor Extraordinary at Zurich."
+                },
+                {
+                    "fecha_inicio": "1900",
+                    "fecha_fin": "1908",
+                    "puesto": "Technical Assistant",
+                    "empresa": "Swiss Patent Office",
+                    "descripcion": "As I was unable to find a teaching post, I accepted a position as technical assistant in the Swiss Patent Office."
+                }
+            ],
+            "educacion": [
+                {
+                    "titulo": "Director",
+                    "fecha_inicio": "1913",
+                    "fecha_fin": "1913",
+                    "instituto": "Kaiser Wilhelm Physical Institute",
+                    "ciudad": "Berlin"
+                },
+                {
+                    "titulo": "Doctor’s degree.",
+                    "fecha_inicio": "1895",
+                    "fecha_fin": "1904",
+                    "instituto": "Swiss Federal Polytechnic School-Aarau",
+                    "ciudad": "Switzerland"
+                }
+            ],
+            "certificaciones": [
+                {
+                    "especialidad": "doctorado en Física",
+                    "institucion": "Escuela Politécnica Federal de Zúrich"
+                },
+                {
+                    "especialidad": "Doctor en Filosofía",
+                    "institucion": "Escuela Politécnica Federal de Zúrich"
+                }
+            ],
+            "objetivos_personales": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ac nisl et augue mollis posuere quis at arcu. Fusce egestas, lacus euismod vehicula auctor, dui massa ornare turpis, ac ornare orci quam vitae leo. Proin congue eget justo pharetra dapibus. Suspendisse quis egestas nisi. Nunc ut tincidunt turpis. Nulla quam nibh, porttitor et sem sed, laoreet efficitur lectus. Sed in accumsan odio. Suspendisse potenti. Sed molestie elit ut rhoncus feugiat. Nam volutpat ligula vel orci elementum dictum. Morbi interdum tempor efficitur. Aliquam semper nec lorem lacinia luctus. Duis faucibus dignissim erat a mollis."
+        },
+        {
+            "foto_perfil": {
+                "large": "perfil-large2.jpg",
+                "medium": "perfil-medium2.jpg",
+                "thumbnail": "perfil-thumbnail2.jpg"
+            },
+            "nombre_apellido": {
+                "nombre": "Omar",
+                "apellido": "Miranda"
+            },
+            "ocupacion": "Ingeniero Industrial",
+            "direccion": {
+                "calle": {
+                    "nombre": "Calle 123",
+                    "numero": 6523
+                },
+                "codigo_postal": "08012",
+                "localidad": "Ingeniero Industrial"
+            },
+            "telefono": "989 898 99",
+            "email": "o.miranda@ejemplo.com",
+            "fecha_nacimiento": "1992-03-08",
+            "nacionalidad": "Ar",
+            "habilidades": [
+                {
+                    "habilidad": "Gestión de Recursos",
+                    "nivel": "90%"
+                },
+                {
+                    "habilidad": "Interpretación de planos",
+                    "nivel": "100%"
+                },
+                {
+                    "habilidad": "Estrategia Empresarial",
+                    "nivel": "80%"
+                },
+                {
+                    "habilidad": "Flexibilidad",
+                    "nivel": "50%"
+                }
+            ],
+            "software": [
+                {
+                    "software": "Agile",
+                    "nivel": "100%"
+                },
+                {
+                    "software": "AutoCAD",
+                    "nivel": "90%"
+                },
+                {
+                    "software": "Revit",
+                    "nivel": "80%"
+                },
+                {
+                    "software": "Project",
+                    "nivel": "80%"
+                },
+                {
+                    "software": "Presto",
+                    "nivel": "75%"
+                }
 
+            ],
+            "idiomas": [
+                {
+                    "idioma": "Inglés",
+                    "nivel": "90%"
+                },
+                {
+                    "idioma": "Alemán",
+                    "nivel": "80%"
+                }
+            ],
+            "perfil_laboral": "Ingeniero Industrial con 15 años de experiencia en Project Management de I+D, en el sector de construcción. Coordinación de equipos internacionales con hasta 78 integrantes. Cumplimiento de objetivos financieros, empresariales y técnicos, en más de 300 proyectos para empresas del sector de construcción, usando Agiles.",
+            "experiencia": [
+                {
+                    "fecha_inicio": "2017",
+                    "fecha_fin": false,
+                    "puesto": "Project Manager SR",
+                    "empresa": "Everis and NTT DATA Company. Barcelona, ES",
+                    "descripcion": "Liderar al equipo global e integral para la optimización y el cumplimiento de proyectos. Anticipé errores en los procesos internos de la empresa, ahorrando más de 12,345 EUR. Logré liderar exitosamente al equipo global, consiguiendo cumplir las expectativas de tiempo, calidad y costo de los entregables un 89% más que el año anterior. "
+                },
+                {
+                    "fecha_inicio": "2011",
+                    "fecha_fin": "2017",
+                    "puesto": "Mentor en el Área de Business & Tech",
+                    "empresa": "IEBS, España.",
+                    "descripcion": "Impartición de seminarios MOOC: Transformación Digital para Pymes, Agile & Scrum y Management."
+                },
+                {
+                    "fecha_inicio": "2007",
+                    "fecha_fin": "2010",
+                    "puesto": "Asistente de Coordinación de Proyectos",
+                    "empresa": "Walters People. Málaga, ES",
+                    "descripcion": "Diseñar técnicas para la optimización de rendimiento de un equipo técnico conformado por 25 personas.<br> Lideré el proyecto interno de Transformación digital del empresa, logrando generar un impulso de 43% más, que en los últimos 3 años que el proyecto llevaba activo.<br> Tuve la oportunidad de administrar por primera vez el presupuesto de un proyecto mediano, consiguiendo una optimización de budget de 45% y entregado en tiempo y forma."
+                },
+                {
+                    "fecha_inicio": "2006",
+                    "fecha_fin": "2006",
+                    "puesto": "Beca Ingeniero Industrial Proyectos",
+                    "empresa": "Walters People. Málaga, ES",
+                    "descripcion": "Apoyo en la gestión de proveedores y precios.<br> Dar seguimiento a actividades post compra con proveedores (revisión y pagos).<br> Obtuve conocimientos del sector de la construcción e instalaciones. Desarrollé dotes comerciales y de negociación.<br> Aprendí a diferenciar los productos de alta calidad dentro del sector de la construcción e instalaciones."
+                }
+
+            ],
+            "educacion": [
+                {
+                    "titulo": "Máster universitario en Ingeniería Industrial",
+                    "fecha_inicio": "2004",
+                    "fecha_fin": "2007",
+                    "instituto": "Escuela Técnica Superior de Ingeniería Industrial de Barcelona (ETSEIB)",
+                    "ciudad": "Barcelona"
+                },
+                {
+                    "titulo": "Grado en Ingeniería en Tecnologías Industriales",
+                    "fecha_inicio": "2000",
+                    "fecha_fin": "2004",
+                    "instituto": "Escuela Superior de Ingenierías (ESEIAAT)",
+                    "ciudad": false
+                }
+            ],
+            "certificaciones": [
+                {
+                    "especialidad": "Postgrado en Agile Project Management",
+                    "institucion": "IEB School"
+                }
+            ],
+            "objetivos_personales": false
+        },
+        {
+            "foto_perfil": {
+                "large": "perfil-large3.jpg",
+                "medium": "perfil-medium3.jpg",
+                "thumbnail": "perfil-thumbnail3.jpg"
+            },
+            "nombre_apellido": {
+                "nombre": "Ramiro",
+                "apellido": "Alvarado Gómez"
+            },
+            "ocupacion": "Programador Web",
+            "direccion": {
+                "calle": {
+                    "nombre": "Woodland Terrace",
+                    "numero": 996
+                },
+                "codigo_postal": "95815",
+                "localidad": "CA"
+            },
+            "telefono": "934 42 31 42",
+            "email": "ramiro.alvaradog@ejemplo.com",
+            "fecha_nacimiento": "27/01/1987",
+            "nacionalidad": "Es",
+            "habilidades": [
+                {
+                    "habilidad": "Liderazgo",
+                    "nivel": "80%"
+                },
+                {
+                    "habilidad": "Trabajo en equipo",
+                    "nivel": "90%"
+                }
+            ],
+            "software": [
+                {
+                    "software": "PHP",
+                    "nivel": "100%"
+                },
+                {
+                    "software": "MySQL",
+                    "nivel": "95%"
+                },
+                {
+                    "software": "HTML5",
+                    "nivel": "100%"
+                },
+                {
+                    "software": "CSS3",
+                    "nivel": "90%"
+                },
+                {
+                    "software": "Javascript",
+                    "nivel": "100%"
+                },
+                {
+                    "software": "PostgreSQL",
+                    "nivel": "80%"
+                }
+            ],
+            "idiomas": [
+                {
+                    "idioma": "ingles",
+                    "nivel": "70%"
+                }
+            ],
+            "perfil_laboral": "Programador con más de cinco años de experiencia generando código para empresas del sector bancario. Creé el nuevo portal web de Santander, el cual recibe más de 1 millón de visitas al día. Los errores reportados en los micrositios del banco se redujeron en un 20% y la retención de usuarios incrementó en un 10%. Especialista en solución de problemas y trabajo en equipo.",
+            "experiencia": [
+                {
+                    "fecha_inicio": "2017",
+                    "fecha_fin": "2019",
+                    "puesto": "Programador Web",
+                    "empresa": "Banco Santander",
+                    "descripcion": [
+                        {"descripcion": "Escribí el código una página web con la capacidad de recibir a más de un millón de usuarios diariamente."},
+                        {"descripcion": "Responsable de crear un comparador de tarjetas de crédito que elevó las ventas de producto en un 15%."},
+                        {"descripcion": "Desarrollé una aplicación bancaria especializada en seguros de auto la cual recibió una calificación de 4.8 estrellas."}
+                    ]
+                },
+                {
+                    "fecha_inicio": "2016",
+                    "fecha_fin": "2017",
+                    "puesto": "Desarrollador Web",
+                    "empresa": "Flame Analytics",
+                    "descripcion": [
+                        {"descripcion": "A lo largo de mi estancia, participé en más de 15 proyectos digitales y colaboré con un equipo de diseñadores, copywriters creativos, project managers y Q&A testers."},
+                        {"descripcion": "Reduje el porcentaje de errores mensuales de la página de inicio del portal de la compañía en un 10%."},
+                        {"descripcion": "Como parte del comité de mejoras continuas de la empresa, colaboré para optimizar los tiempos de carga de la página web en un 15%."}
+                    ]
+                }
+            ],
+            "educacion": [
+                {
+                    "titulo": "Ingeniería Técnica en Informática de Sistemas",
+                    "fecha_inicio": "2012",
+                    "fecha_fin": "2015",
+                    "instituto": "Universidad Complutense de Madrid",
+                    "ciudad": "Madrid"
+                }
+            ],
+            "certificaciones": false,
+            "objetivos_personales": false
+        },
+        {
+            "foto_perfil": {
+                "large": "perfil-large4.jpg",
+                "medium": "perfil-medium4.jpg",
+                "thumbnail": "perfil-thumbnail4.jpg"
+            },
+            "nombre_apellido": {
+                "nombre": "Roxana",
+                "apellido": "Godoy"
+            },
+            "ocupacion": "Gerente de sucursal",
+            "direccion": {
+                "calle": {
+                    "nombre": "Tabaré",
+                    "numero": 4930
+                },
+                "codigo_postal": 40000,
+                "localidad": "Rivera"
+            },
+            "telefono": "9922 6170",
+            "email": "roxana.godoy@ejemplo.com",
+            "fecha_nacimiento": "16/10/1998",
+            "nacionalidad": "Uruguay",
+            "habilidades": [
+                {
+                    "habilidad": "Resolucion de problemas",
+                    "nivel": "95%"
+                },
+                {
+                    "habilidad": "Multitasking",
+                    "nivel": "90%"
+                },
+                {
+                    "habilidad": "Manejo de PC y Mac",
+                    "nivel": "80%"
+                },
+                {
+                    "habilidad": "Oratoria",
+                    "nivel": "80%"
+                }
+            ],
+            "software": [
+                {
+                    "software": "Microsoft Ofice",
+                    "nivel": "80%"
+                }
+            ],
+            "idiomas": [
+                {
+                    "idioma": "Inglés",
+                    "nivel": "90%"
+                },
+                {
+                    "idioma": "Portugués",
+                    "nivel": "50%"
+                },
+                {
+                    "idioma": "Italiano",
+                    "nivel": "80%"
+                },
+                {
+                    "idioma": "Coreano (hangul)한글",
+                    "nivel": "60%"
+                }
+            ],
+            "perfil_laboral": "Recepcionista con 4 años de experiencia en empresas de talla internacional. Responsable de la organización de la agenda de dos directores ejecutivos. Conocimientos de contabilidad y manejo de inventario. Recorté los gastos de oficina de 123 Corp. en un 15%. Sociable, proactiva y con atención al detalle.",
+            "experiencia": [
+                {
+                    "fecha_inicio": "2017",
+                    "fecha_fin": "2019",
+                    "puesto": "Recepcionista",
+                    "empresa": "123 Corp.",
+                    "descripcion": [
+                        {"descripcion": "Atención a clientes de forma presencial y telefónica."},
+                        {"descripcion": "Manejo de agenda y planes de viaje de los dos directores ejecutivos de la compañía."},
+                        {"descripcion": "Creación de base de datos con información básica de 8,000 clientes potenciales."},
+                        {"descripcion": "Responsable de dar respuesta a un promedio diario de 50 correos electrónicos que se recibían en la cuenta oficial de la compañía."},
+                        {"descripcion": "Manejo de presupuesto de oficina de 5,000 euros mensuales."}
+                    ]
+                },
+                {
+                    "fecha_inicio": "2014",
+                    "fecha_fin": "2017",
+                    "puesto": "Auxiliar Ejecutiva",
+                    "empresa": "Laboratorios Aura",
+                    "descripcion": [
+                        {"descripcion": "Recepción y atención a clientes."},
+                        {"descripcion": "Programación de citas para los más de 5,000 clientes de la sucursal."},
+                        {"descripcion": "Manejo de inventario y compra mensual de artículos de oficina."},
+                        {"descripcion": "Realización de corte de caja diario."},
+                        {"descripcion": "Supervisión de 3 empleados responsables del mantenimiento de las oficinas."}
+                    ]
+                }
+            ],
+            "educacion": [
+                {
+                    "titulo": "Grado en publicidad y relaciones públicas",
+                    "fecha_inicio": false,
+                    "fecha_fin": "2020",
+                    "instituto": "Universidad de Navarra",
+                    "ciudad": "Navarra"
+                }
+            ],
+            "certificaciones": [
+                {
+                    "especialidad": "Curso de mecanografía",
+                    "institucion": "Instituto Almaguer"
+                },
+                {
+                    "especialidad": "Curso de Excel avanzado online",
+                    "institucion": "Domestika"
+                }
+            ],
+            "objetivos_personales": "Aspiro a formar parte de una de las Cadenas de Hoteles de mayor prestigio en Uruguay, aportando mis habilidades comunicativas y de organización."
+        }
+    ]
+}
