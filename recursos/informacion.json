@@ -102,7 +102,10 @@
                     "ciudad": "Quilmes"
                 }
             ],
-            "certificaciones": [],
+            "certificaciones": [{
+                "especialidad": false,
+                "institucion":false
+            }],
             "objetivos_personales": "Curabitur elementum iaculis ullamcorper. Vivamus blandit, metus vitae dictum dictum, nisi neque eleifend orci, suscipit ultrices velit ante ac magna. Proin et dignissim neque. Praesent ipsum ipsum, rhoncus et tristique eu, eleifend eget est. Proin molestie fermentum nibh, vulputate ornare leo accumsan at. Sed consectetur rutrum lorem, ac molestie nisi rhoncus in. Curabitur at est enim. Morbi vulputate facilisis augue, sed iaculis nisi ullamcorper porttitor. Maecenas eu rhoncus massa. Aliquam a metus vitae odio rhoncus mattis nec vitae enim. Nam ac metus vitae mauris auctor dictum eu id risus. Duis consequat sem ac mi dapibus, at tincidunt odio lobortis. Aenean nec ante a tortor dictum viverra."
         },
         {
@@ -443,7 +446,13 @@
                     "ciudad": "Madrid"
                 }
             ],
-            "certificaciones": false,
+            "certificaciones": [
+                {
+                    "especialidad": false,
+                    "institucion":false
+
+                }
+            ],
             "objetivos_personales": false
         },
         {

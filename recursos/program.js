@@ -55,8 +55,9 @@ function actualizarDatos(perfilList, nPerfil) {
 
     actualizarExperiencia(p, n);
     actualizarEducacion(p, n);
+
+    actualizarCertificados(p, n);
     
-    actualizarCertificados(p,n);
 
     if (p.persona[n].objetivos_personales != false) {
         document.getElementById("objetivos").innerHTML = p.persona[n].objetivos_personales
@@ -282,10 +283,29 @@ function actualizarEducacion(perfil, n) {
 
 
 
+function actualizarCertificados(perfil, n) {
+    eliminar_cert("certificados")
+    if (perfil.persona[n].certificaciones.length > 0 & perfil.persona[n].certificaciones[0].especialidad != false) {
+        
+        document.getElementById("seccion_certificaciones").style.display = "block"
 
-function actualizarCertificados(p, n) {
+        for (let i = 0; i < perfil.persona[n].certificaciones.length; i++) {
 
-    add_cert(p, n, "id");
+            var especialidad = perfil.persona[n].certificaciones[i].especialidad
+            var institucion = perfil.persona[n].certificaciones[i].institucion
+            console.log(i+"index")
+            add_cert(especialidad, institucion, "certificados");
+
+        }
+
+
+
+
+    } else {
+        document.getElementById("seccion_certificaciones").style.display = "none"
+    }
+
+    
 
 }
 
@@ -350,6 +370,20 @@ function eliminar_li(id) {
         const temp = padre.firstChild
         document.getElementById(id).removeChild(temp)
 
+    }
+
+}
+
+function eliminar_cert(id) {
+
+    const cert = document.getElementById(id).querySelector("tbody").childElementCount
+    
+    
+
+    for (let i = 0; i < cert; i++) {
+        
+        document.getElementById(id).querySelector("tbody").deleteRow(0)
+        
     }
 
 }
@@ -427,11 +461,20 @@ function add_cert(esp, inst, id) {
     }
     return false;
     */
-    let node = [esp, inst]
-    
+    // Find a <table> element with id="myTable":
+    var table = document.getElementById(id).querySelector("tbody");
 
-        document.getElementById("certificados").append(node)
+    // Create an empty <tr> element and add it to the 1st position of the table:
+    var row = table.insertRow(0);
 
+   
+    // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+
+    // Add some text to the new cells:
+    cell1.innerHTML = esp;
+    cell2.innerHTML = inst;
 
 }
 
