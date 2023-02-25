@@ -4,7 +4,7 @@
             "foto_perfil": {
                 "large": "perfil-large0.jpg",
                 "medium": "perfil-medium0.jpg",
-                "thumbnail": "perfil-thumbnail0.jpg"
+                "small": "perfil-small0.jpg"
             },
             "nombre_apellido": {
                 "nombre": "Ana",
@@ -54,7 +54,6 @@
                     "software": "access",
                     "nivel": "50%"
                 }
-                
             ],
             "idiomas": [
                 {
@@ -101,18 +100,16 @@
                     "fecha_fin": "2018",
                     "instituto": "Universidad Nacional de Quilmes",
                     "ciudad": "Quilmes"
-                }             
+                }
             ],
-            "certificaciones": [
-                null
-            ],
+            "certificaciones": [],
             "objetivos_personales": "Curabitur elementum iaculis ullamcorper. Vivamus blandit, metus vitae dictum dictum, nisi neque eleifend orci, suscipit ultrices velit ante ac magna. Proin et dignissim neque. Praesent ipsum ipsum, rhoncus et tristique eu, eleifend eget est. Proin molestie fermentum nibh, vulputate ornare leo accumsan at. Sed consectetur rutrum lorem, ac molestie nisi rhoncus in. Curabitur at est enim. Morbi vulputate facilisis augue, sed iaculis nisi ullamcorper porttitor. Maecenas eu rhoncus massa. Aliquam a metus vitae odio rhoncus mattis nec vitae enim. Nam ac metus vitae mauris auctor dictum eu id risus. Duis consequat sem ac mi dapibus, at tincidunt odio lobortis. Aenean nec ante a tortor dictum viverra."
         },
         {
             "foto_perfil": {
                 "large": "perfil-large1.jpg",
                 "medium": "perfil-medium1.jpg",
-                "thumbnail": "perfil-thumbnail1.jpg"
+                "small": "perfil-small1.jpg"
             },
             "nombre_apellido": {
                 "nombre": "Albert",
@@ -133,7 +130,7 @@
             "nacionalidad": "Us",
             "habilidades": [
                 {
-                    "habilidad": "Atención al cliente",
+                    "habilidad": "Pensamiento Lógico",
                     "nivel": "80%"
                 },
                 {
@@ -141,31 +138,16 @@
                     "nivel": "90%"
                 },
                 {
-                    "habilidad": "Manejo de estrés",
+                    "habilidad": "Perseverancia",
                     "nivel": "100%"
                 },
                 {
                     "habilidad": "Liderazgo",
-                    "nivel": ""
+                    "nivel": "50%"
                 }
             ],
             "software": [
-                {
-                    "software": "",
-                    "nivel": ""
-                },
-                {
-                    "software": "",
-                    "nivel": ""
-                },
-                {
-                    "software": "",
-                    "nivel": ""
-                },
-                {
-                    "software": "",
-                    "nivel": ""
-                }
+                
             ],
             "idiomas": [
                 {
@@ -244,7 +226,7 @@
             "foto_perfil": {
                 "large": "perfil-large2.jpg",
                 "medium": "perfil-medium2.jpg",
-                "thumbnail": "perfil-thumbnail2.jpg"
+                "small": "perfil-small2.jpg"
             },
             "nombre_apellido": {
                 "nombre": "Omar",
@@ -257,7 +239,7 @@
                     "numero": 6523
                 },
                 "codigo_postal": "08012",
-                "localidad": "Ingeniero Industrial"
+                "localidad": "Malvinas"
             },
             "telefono": "989 898 99",
             "email": "o.miranda@ejemplo.com",
@@ -302,7 +284,6 @@
                     "software": "Presto",
                     "nivel": "75%"
                 }
-
             ],
             "idiomas": [
                 {
@@ -344,7 +325,6 @@
                     "empresa": "Walters People. Málaga, ES",
                     "descripcion": "Apoyo en la gestión de proveedores y precios.<br> Dar seguimiento a actividades post compra con proveedores (revisión y pagos).<br> Obtuve conocimientos del sector de la construcción e instalaciones. Desarrollé dotes comerciales y de negociación.<br> Aprendí a diferenciar los productos de alta calidad dentro del sector de la construcción e instalaciones."
                 }
-
             ],
             "educacion": [
                 {
@@ -374,7 +354,7 @@
             "foto_perfil": {
                 "large": "perfil-large3.jpg",
                 "medium": "perfil-medium3.jpg",
-                "thumbnail": "perfil-thumbnail3.jpg"
+                "small": "perfil-small3.jpg"
             },
             "nombre_apellido": {
                 "nombre": "Ramiro",
@@ -443,9 +423,15 @@
                     "puesto": "Programador Web",
                     "empresa": "Banco Santander",
                     "descripcion": [
-                        {"descripcion": "Escribí el código una página web con la capacidad de recibir a más de un millón de usuarios diariamente."},
-                        {"descripcion": "Responsable de crear un comparador de tarjetas de crédito que elevó las ventas de producto en un 15%."},
-                        {"descripcion": "Desarrollé una aplicación bancaria especializada en seguros de auto la cual recibió una calificación de 4.8 estrellas."}
+                        {
+                            "descripcion": "Escribí el código una página web con la capacidad de recibir a más de un millón de usuarios diariamente."
+                        },
+                        {
+                            "descripcion": "Responsable de crear un comparador de tarjetas de crédito que elevó las ventas de producto en un 15%."
+                        },
+                        {
+                            "descripcion": "Desarrollé una aplicación bancaria especializada en seguros de auto la cual recibió una calificación de 4.8 estrellas."
+                        }
                     ]
                 },
                 {
@@ -454,9 +440,15 @@
                     "puesto": "Desarrollador Web",
                     "empresa": "Flame Analytics",
                     "descripcion": [
-                        {"descripcion": "A lo largo de mi estancia, participé en más de 15 proyectos digitales y colaboré con un equipo de diseñadores, copywriters creativos, project managers y Q&A testers."},
-                        {"descripcion": "Reduje el porcentaje de errores mensuales de la página de inicio del portal de la compañía en un 10%."},
-                        {"descripcion": "Como parte del comité de mejoras continuas de la empresa, colaboré para optimizar los tiempos de carga de la página web en un 15%."}
+                        {
+                            "descripcion": "A lo largo de mi estancia, participé en más de 15 proyectos digitales y colaboré con un equipo de diseñadores, copywriters creativos, project managers y Q&A testers."
+                        },
+                        {
+                            "descripcion": "Reduje el porcentaje de errores mensuales de la página de inicio del portal de la compañía en un 10%."
+                        },
+                        {
+                            "descripcion": "Como parte del comité de mejoras continuas de la empresa, colaboré para optimizar los tiempos de carga de la página web en un 15%."
+                        }
                     ]
                 }
             ],
@@ -476,7 +468,7 @@
             "foto_perfil": {
                 "large": "perfil-large4.jpg",
                 "medium": "perfil-medium4.jpg",
-                "thumbnail": "perfil-thumbnail4.jpg"
+                "small": "perfil-small4.jpg"
             },
             "nombre_apellido": {
                 "nombre": "Roxana",
@@ -545,11 +537,21 @@
                     "puesto": "Recepcionista",
                     "empresa": "123 Corp.",
                     "descripcion": [
-                        {"descripcion": "Atención a clientes de forma presencial y telefónica."},
-                        {"descripcion": "Manejo de agenda y planes de viaje de los dos directores ejecutivos de la compañía."},
-                        {"descripcion": "Creación de base de datos con información básica de 8,000 clientes potenciales."},
-                        {"descripcion": "Responsable de dar respuesta a un promedio diario de 50 correos electrónicos que se recibían en la cuenta oficial de la compañía."},
-                        {"descripcion": "Manejo de presupuesto de oficina de 5,000 euros mensuales."}
+                        {
+                            "descripcion": "Atención a clientes de forma presencial y telefónica."
+                        },
+                        {
+                            "descripcion": "Manejo de agenda y planes de viaje de los dos directores ejecutivos de la compañía."
+                        },
+                        {
+                            "descripcion": "Creación de base de datos con información básica de 8,000 clientes potenciales."
+                        },
+                        {
+                            "descripcion": "Responsable de dar respuesta a un promedio diario de 50 correos electrónicos que se recibían en la cuenta oficial de la compañía."
+                        },
+                        {
+                            "descripcion": "Manejo de presupuesto de oficina de 5,000 euros mensuales."
+                        }
                     ]
                 },
                 {
@@ -558,11 +560,21 @@
                     "puesto": "Auxiliar Ejecutiva",
                     "empresa": "Laboratorios Aura",
                     "descripcion": [
-                        {"descripcion": "Recepción y atención a clientes."},
-                        {"descripcion": "Programación de citas para los más de 5,000 clientes de la sucursal."},
-                        {"descripcion": "Manejo de inventario y compra mensual de artículos de oficina."},
-                        {"descripcion": "Realización de corte de caja diario."},
-                        {"descripcion": "Supervisión de 3 empleados responsables del mantenimiento de las oficinas."}
+                        {
+                            "descripcion": "Recepción y atención a clientes."
+                        },
+                        {
+                            "descripcion": "Programación de citas para los más de 5,000 clientes de la sucursal."
+                        },
+                        {
+                            "descripcion": "Manejo de inventario y compra mensual de artículos de oficina."
+                        },
+                        {
+                            "descripcion": "Realización de corte de caja diario."
+                        },
+                        {
+                            "descripcion": "Supervisión de 3 empleados responsables del mantenimiento de las oficinas."
+                        }
                     ]
                 }
             ],
