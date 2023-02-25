@@ -147,7 +147,8 @@
                 }
             ],
             "software": [
-                
+                {"software": false,
+                "nivel": false}
             ],
             "idiomas": [
                 {
@@ -159,8 +160,8 @@
                     "nivel": "80%"
                 },
                 {
-                    "idioma": "Italiano",
-                    "nivel": "30%"
+                    "idioma": "Alemán",
+                    "nivel": "100%"
                 }
             ],
             "perfil_laboral": "theoretical physicist, mathemathics, nobel prize for physics philosopher, politician, formulator of the theory of relativity.",
@@ -422,34 +423,15 @@
                     "fecha_fin": "2019",
                     "puesto": "Programador Web",
                     "empresa": "Banco Santander",
-                    "descripcion": [
-                        {
-                            "descripcion": "Escribí el código una página web con la capacidad de recibir a más de un millón de usuarios diariamente."
-                        },
-                        {
-                            "descripcion": "Responsable de crear un comparador de tarjetas de crédito que elevó las ventas de producto en un 15%."
-                        },
-                        {
-                            "descripcion": "Desarrollé una aplicación bancaria especializada en seguros de auto la cual recibió una calificación de 4.8 estrellas."
-                        }
-                    ]
+                    "descripcion": "<ul><li>Escribí el código una página web con la capacidad de recibir a más de un millón de usuarios diariamente.</li><li>Responsable de crear un comparador de tarjetas de crédito que elevó las ventas de producto en un 15%.</li><li>Desarrollé una aplicación bancaria especializada en seguros de auto la cual recibió una calificación de 4.8 estrellas.</li></ul>"
                 },
                 {
                     "fecha_inicio": "2016",
                     "fecha_fin": "2017",
                     "puesto": "Desarrollador Web",
                     "empresa": "Flame Analytics",
-                    "descripcion": [
-                        {
-                            "descripcion": "A lo largo de mi estancia, participé en más de 15 proyectos digitales y colaboré con un equipo de diseñadores, copywriters creativos, project managers y Q&A testers."
-                        },
-                        {
-                            "descripcion": "Reduje el porcentaje de errores mensuales de la página de inicio del portal de la compañía en un 10%."
-                        },
-                        {
-                            "descripcion": "Como parte del comité de mejoras continuas de la empresa, colaboré para optimizar los tiempos de carga de la página web en un 15%."
-                        }
-                    ]
+                    "descripcion": "<ul><li>A lo largo de mi estancia, participé en más de 15 proyectos digitales y colaboré con un equipo de diseñadores, copywriters creativos, project managers y Q&A testers.</li><li>Reduje el porcentaje de errores mensuales de la página de inicio del portal de la compañía en un 10%.</li><li>Como parte del comité de mejoras continuas de la empresa, colaboré para optimizar los tiempos de carga de la página web en un 15%.</li></ul>"         
+     
                 }
             ],
             "educacion": [
@@ -536,46 +518,14 @@
                     "fecha_fin": "2019",
                     "puesto": "Recepcionista",
                     "empresa": "123 Corp.",
-                    "descripcion": [
-                        {
-                            "descripcion": "Atención a clientes de forma presencial y telefónica."
-                        },
-                        {
-                            "descripcion": "Manejo de agenda y planes de viaje de los dos directores ejecutivos de la compañía."
-                        },
-                        {
-                            "descripcion": "Creación de base de datos con información básica de 8,000 clientes potenciales."
-                        },
-                        {
-                            "descripcion": "Responsable de dar respuesta a un promedio diario de 50 correos electrónicos que se recibían en la cuenta oficial de la compañía."
-                        },
-                        {
-                            "descripcion": "Manejo de presupuesto de oficina de 5,000 euros mensuales."
-                        }
-                    ]
+                    "descripcion":  "<ul><li>Atención a clientes de forma presencial y telefónica.</li><li>Manejo de agenda y planes de viaje de los dos directores ejecutivos de la compañía.</li><li>Creación de base de datos con información básica de 8,000 clientes potenciales.</li><li>Responsable de dar respuesta a un promedio diario de 50 correos electrónicos que se recibían en la cuenta oficial de la compañía.</li><li>Manejo de presupuesto de oficina de 5,000 euros mensuales.</li></ul>"
                 },
                 {
                     "fecha_inicio": "2014",
                     "fecha_fin": "2017",
                     "puesto": "Auxiliar Ejecutiva",
                     "empresa": "Laboratorios Aura",
-                    "descripcion": [
-                        {
-                            "descripcion": "Recepción y atención a clientes."
-                        },
-                        {
-                            "descripcion": "Programación de citas para los más de 5,000 clientes de la sucursal."
-                        },
-                        {
-                            "descripcion": "Manejo de inventario y compra mensual de artículos de oficina."
-                        },
-                        {
-                            "descripcion": "Realización de corte de caja diario."
-                        },
-                        {
-                            "descripcion": "Supervisión de 3 empleados responsables del mantenimiento de las oficinas."
-                        }
-                    ]
+                    "descripcion": "<ul><li>Recepción y atención a clientes</li><li>Programación de citas para los más de 5,000 clientes de la sucursal</li><li>Manejo de inventario y compra mensual de artículos de oficina</li><li>Realización de corte de caja diario</li><li>Supervisión de 3 empleados responsables del mantenimiento de las oficinas.</li></ul>"
                 }
             ],
             "educacion": [
