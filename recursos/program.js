@@ -49,7 +49,8 @@ function actualizarDatos(perfilList, nPerfil) {
 
 
     actualizarHabilidades(p, n);
-
+    actualizarSoftware(p, n);
+    actualizarIdiomas(p, n);
 
 }
 
@@ -83,31 +84,14 @@ function actualizarFotoSmall(perfilList, nPerfil) {
 
 }
 
-console.log(info.persona[0].habilidades.length + "apa");
+
+
+
+
 function actualizarHabilidades(perfil, n) {
 
-    const hijos = document.getElementById("habilidades").childNodes.length;
-    const padre = document.getElementById("habilidades");
-    const hijo = document.querySelector("#habilidad");
 
-    console.log(padre)
-    console.log(hijos + " no se");
-    console.log(hijos + "hijos")
-
-
-    for (let i = 1; i < hijos; i++) {
-        if (hijos.length != 0) {
-            console.log(hijos + "swegf");
-            const temp = padre.firstChild
-            document.getElementById("habilidades").removeChild(temp)
-            
-            
-
-        }
-    }
-
-
-
+    eliminar_li("habilidades");
 
     if (perfil.persona[n].habilidades.length != 0) {
 
@@ -115,14 +99,60 @@ function actualizarHabilidades(perfil, n) {
         for (let i = 0; i < perfil.persona[n].habilidades.length; i++) {
             var habilidad = perfil.persona[n].habilidades[i].habilidad
             var nivel = perfil.persona[n].habilidades[i].nivel
-            add_li(habilidad, nivel, i);
+            add_li(habilidad, nivel, "habilidades");
         }
 
 
 
 
     } else {
-        console.log("apa")
+        console.log("no añadio habilidades")
+    }
+
+}
+
+function actualizarSoftware(perfil, n) {
+
+
+    eliminar_li("software");
+
+    if (perfil.persona[n].software.length != 0) {
+
+
+        for (let i = 0; i < perfil.persona[n].software.length; i++) {
+            var software = perfil.persona[n].software[i].software
+            var nivel = perfil.persona[n].software[i].nivel
+            add_li(software, nivel, "software");
+        }
+
+
+
+
+    } else {
+        console.log("no añadio habilidades")
+    }
+
+}
+
+function actualizarIdiomas(perfil, n) {
+
+
+    eliminar_li("idiomas");
+
+    if (perfil.persona[n].software.length != 0) {
+
+
+        for (let i = 0; i < perfil.persona[n].idiomas.length; i++) {
+            var idiomas = perfil.persona[n].idiomas[i].idioma
+            var nivel = perfil.persona[n].idiomas[i].nivel
+            add_li(idiomas, nivel, "idiomas");
+        }
+
+
+
+
+    } else {
+        console.log("no añadio habilidades")
     }
 
 }
@@ -138,15 +168,15 @@ function actualizarHabilidades(perfil, n) {
 
 console.log(info.persona[3].habilidades[1].habilidad);
 
-function add_li(h, v, n) {
+function add_li(h, v, id) {
     var nuevoLi = h;
 
     if (nuevoLi.length > 0) {
-        if (find_li(nuevoLi)) {
+        if (find_li(nuevoLi, id)) {
             var li = document.createElement('li');
-            li.id = "habilidad";
-            li.innerHTML = '<p id= "habilidad">' + h + '</p> <p id="valor">' + v + "<p>";
-            document.getElementById("habilidades").appendChild(li);
+            li.id = id;
+            li.innerHTML = '<p id= "'+id+'">' + h + '</p> <p id="valor">' + v + "<p>";
+            document.getElementById(id).appendChild(li);
         }
     }
     return false;
@@ -156,8 +186,8 @@ function add_li(h, v, n) {
  * Funcion que busca si existe ya el <li> dentrol del <ul>
  * Devuelve true si no existe.
  */
-function find_li(contenido) {
-    var el = document.getElementById("habilidades").getElementsByTagName("li");
+function find_li(contenido, id) {
+    var el = document.getElementById(id).getElementsByTagName("li");
     for (var i = 0; i < el.length; i++) {
         if (el[i].innerHTML == contenido)
             return false;
@@ -169,8 +199,17 @@ function find_li(contenido) {
  * Funcion para eliminar los elementos
  * Tiene que recibir el elemento pulsado
  */
-function eliminar(elemento) {
-    var id = elemento.parentNode.getAttribute("id");
-    node = document.getElementById(id);
-    node.parentNode.removeChild(node);
+function eliminar_li(id) {
+    
+    const hijos = document.getElementById(id).childNodes.length;
+    const padre = document.getElementById(id);
+
+    for (let i = 0; i < hijos; i++) {
+
+        console.log(hijos + "swegf");
+        const temp = padre.firstChild
+        document.getElementById(id).removeChild(temp)
+
+    }
+
 }
