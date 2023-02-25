@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+
     <title>Document</title>
 </head>
 
-<body>
+<body window="">
     <nav>
         <ul>
             <li><a href="#perfil">PERFIL</a></li>
@@ -20,36 +22,66 @@
     </nav>
     <a name="inicio"></a>
     <section>
+        <select class="perfiles" name="perfiles" id="perfiles">
+            <option value="">--elija un perfil--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            
+        </select>
+        <div class="result"></div>
+
         <section aria-label="Foto de perfil y Datos personales">
             <div class="foto-perfil">
-                <img id = "foto_perfil" src="#" alt="foto de perfil">
+                <div class="large">
+                    <img id = "foto_perfilLarge"  src="#" alt="foto de perfil Large">
+                </div>
+                <div class="medium">
+                    <img id = "foto_perfilMedium" src="#" alt="foto de perfil Medium">
+                </div>
+                <div class="small">
+                    <img id = "foto_perfilSmall" src="#" alt="foto de perfil Small">
+                </div>
+                
+                
                 <div class="datos-personales">
                     <h2>DATOS PERSONALES</h2>
                 </div>
 
-                <h3><i class="nombre-icon"></i>Nombre y apellido</h3>
+                <h3 id="nombre_apellido"><i class="nombre-icon"></i>Nombre y apellido</h3>
+
             </div>
 
             <div class="datos-ocupacion">
                 <p><i class="ocupacion-icon"></i></p>
-                <p>Ocupación</p>
+                <p id="ocupacion">Ocupación</p>
 
             </div>
 
             <div class="datos-direccion">
                 <p><i class="direccion-icon"></i></p>
-                <p>Calle Número</p>
-                <p>Código postal, Localidad</p>
+                <p id="direccion">Calle Número</p>
+                <p id="cp_localidad">Código postal, Localidad</p>
             </div>
 
             <div class="datos-telefono">
                 <p><i class="telefono-icon"></i></p>
-                <p>Número de teléfono</p>
+                <p id="telefono">Número de teléfono</p>
             </div>
 
             <div class="datos-email">
                 <p><i class="email-icon"></i></p>
-                <p>email@mail.com</p>
+                <p id="email">email@mail.com</p>
+            </div>
+
+            <div class="fecha_nac">
+                <p id="fecha_nac">00/00/0000</p>
+            </div>
+
+            <div class="nacionalidad">
+                <pid id="nacionalidad">XX</p>
             </div>
 
         </section>
@@ -57,22 +89,15 @@
             <section aria-label="Habilidades">
                 <div class="habilidades">
                     <h2>HABILIDADES</h2>
-                    <ul>
-                        <li><span class="habilidad1"></span></li>
-                        <li><span class="habilidad2"></span></li>
-                        <li><span class="habilidad3"></span></li>
-                        <li><span class="habilidad4"></span></li>
+                    <ul class="padre" id="habilidades">                        
                     </ul>
                 </div>
             </section>
             <section aria-label="Software">
                 <div class="Software">
                     <h2>SOFTWARE</h2>
-                    <ul>
-                        <li><span class="software1"></span></li>
-                        <li><span class="software2"></span></li>
-                        <li><span class="software3"></span></li>
-                        <li><span class="software4"></span></li>
+                    <ul id="software">
+                        
                     </ul>
                 </div>
 
@@ -80,11 +105,8 @@
             <section aria-label="Idiomas">
                 <div class="idiomas">
                     <h2>IDIOMAS</h2>
-                    <ul>
-                        <li><span class="idioma1"></span></li>
-                        <li><span class="idioma2"></span></li>
-                        <li><span class="idioma3"></span></li>
-                        <li><span class="idioma4"></span></li>
+                    <ul id="idiomas">
+                        
                     </ul>
                 </div>
             </section>
@@ -203,6 +225,14 @@
             </div>            
         </section>
 
+        <footer>
+            <button id="perfil1">1</button>
+            <button id="perfil2">2</button>
+            <button id="perfil3">3</button>
+            <button id="perfil4">4</button>
+            <button id="perfil5">5</button>
+            
+        </footer>
     </main>
     <script type="module" src="./recursos/program.js"></script>
 </body>
