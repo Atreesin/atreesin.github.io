@@ -26,47 +26,47 @@
             "habilidades": [
                 {
                     "habilidad": "Atención al cliente",
-                    "nivel": "80%"
+                    "nivel": "80"
                 },
                 {
                     "habilidad": "Organización",
-                    "nivel": "90%"
+                    "nivel": "90"
                 },
                 {
                     "habilidad": "Manejo de estrés",
-                    "nivel": "100%"
+                    "nivel": "10"
                 },
                 {
                     "habilidad": "Liderazgo",
-                    "nivel": "50%"
+                    "nivel": "50"
                 }
             ],
             "software": [
                 {
                     "software": "Excel",
-                    "nivel": "100%"
+                    "nivel": "90"
                 },
                 {
                     "software": "Word",
-                    "nivel": "60%"
+                    "nivel": "60"
                 },
                 {
                     "software": "Access",
-                    "nivel": "50%"
+                    "nivel": "50"
                 }
             ],
             "idiomas": [
                 {
                     "idioma": "Inglés",
-                    "nivel": "100%"
+                    "nivel": "100"
                 },
                 {
                     "idioma": "Francés",
-                    "nivel": "50%"
+                    "nivel": "50"
                 },
                 {
                     "idioma": "Alemán",
-                    "nivel": "10%"
+                    "nivel": "10"
                 }
             ],
             "perfil_laboral": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis sem pharetra, semper arcu tincidunt, facilisis quam. Maecenas posuere nulla nec risus blandit volutpat. Suspendisse tincidunt, tortor ac porttitor vehicula, est dolor accumsan mauris, fermentum rutrum massa tellus in arcu. Integer iaculis urna sed nisi convallis, nec tincidunt orci posuere. Sed non dolor eu sapien viverra egestas ac sit amet nibh. Phasellus semper enim id nunc suscipit dictum. Aliquam auctor ipsum quis risus vulputate auctor. Aliquam erat volutpat. Nunc sodales purus quis lectus condimentum malesuada. Morbi varius ultricies ultricies. Ut est ex, aliquam ac posuere id, cursus in neque. Donec at quam egestas, posuere magna id, semper tellus. Curabitur et eleifend magna. Donec id rhoncus nisl.",
@@ -134,19 +134,19 @@
             "habilidades": [
                 {
                     "habilidad": "Pensamiento Lógico",
-                    "nivel": "80%"
+                    "nivel": "80"
                 },
                 {
                     "habilidad": "Organización",
-                    "nivel": "90%"
+                    "nivel": "90"
                 },
                 {
                     "habilidad": "Perseverancia",
-                    "nivel": "100%"
+                    "nivel": "100"
                 },
                 {
                     "habilidad": "Liderazgo",
-                    "nivel": "50%"
+                    "nivel": "50"
                 }
             ],
             "software": [
@@ -155,15 +155,15 @@
             "idiomas": [
                 {
                     "idioma": "Inglés",
-                    "nivel": "100%"
+                    "nivel": "80"
                 },
                 {
                     "idioma": "Francés",
-                    "nivel": "80%"
+                    "nivel": "80"
                 },
                 {
                     "idioma": "Alemán",
-                    "nivel": "100%"
+                    "nivel": "30"
                 }
             ],
             "perfil_laboral": "theoretical physicist, mathemathics, nobel prize for physics philosopher, politician, formulator of the theory of relativity.",
@@ -251,51 +251,51 @@
             "habilidades": [
                 {
                     "habilidad": "Gestión de Recursos",
-                    "nivel": "90%"
+                    "nivel": "50"
                 },
                 {
                     "habilidad": "Interpretación de planos",
-                    "nivel": "100%"
+                    "nivel": "90"
                 },
                 {
                     "habilidad": "Estrategia Empresarial",
-                    "nivel": "80%"
+                    "nivel": "80"
                 },
                 {
                     "habilidad": "Flexibilidad",
-                    "nivel": "50%"
+                    "nivel": "20"
                 }
             ],
             "software": [
                 {
                     "software": "Agile",
-                    "nivel": "100%"
+                    "nivel": "100"
                 },
                 {
                     "software": "AutoCAD",
-                    "nivel": "90%"
+                    "nivel": "90"
                 },
                 {
                     "software": "Revit",
-                    "nivel": "80%"
+                    "nivel": "80"
                 },
                 {
                     "software": "Project",
-                    "nivel": "80%"
+                    "nivel": "80"
                 },
                 {
                     "software": "Presto",
-                    "nivel": "75%"
+                    "nivel": "30"
                 }
             ],
             "idiomas": [
                 {
                     "idioma": "Inglés",
-                    "nivel": "90%"
+                    "nivel": "90"
                 },
                 {
                     "idioma": "Alemán",
-                    "nivel": "80%"
+                    "nivel": "80"
                 }
             ],
             "perfil_laboral": "Ingeniero Industrial con 15 años de experiencia en Project Management de I+D, en el sector de construcción. Coordinación de equipos internacionales con hasta 78 integrantes. Cumplimiento de objetivos financieros, empresariales y técnicos, en más de 300 proyectos para empresas del sector de construcción, usando Agiles.",
@@ -379,43 +379,43 @@
             "habilidades": [
                 {
                     "habilidad": "Liderazgo",
-                    "nivel": "80%"
+                    "nivel": "80"
                 },
                 {
                     "habilidad": "Trabajo en equipo",
-                    "nivel": "90%"
+                    "nivel": "10"
                 }
             ],
             "software": [
                 {
                     "software": "PHP",
-                    "nivel": "100%"
+                    "nivel": "80"
                 },
                 {
                     "software": "MySQL",
-                    "nivel": "95%"
+                    "nivel": "40"
                 },
                 {
                     "software": "HTML5",
-                    "nivel": "100%"
+                    "nivel": "80"
                 },
                 {
                     "software": "CSS3",
-                    "nivel": "90%"
+                    "nivel": "90"
                 },
                 {
                     "software": "Javascript",
-                    "nivel": "100%"
+                    "nivel": "60"
                 },
                 {
                     "software": "PostgreSQL",
-                    "nivel": "80%"
+                    "nivel": "80"
                 }
             ],
             "idiomas": [
                 {
                     "idioma": "ingles",
-                    "nivel": "70%"
+                    "nivel": "70"
                 }
             ],
             "perfil_laboral": "Programador con más de cinco años de experiencia generando código para empresas del sector bancario. Creé el nuevo portal web de Santander, el cual recibe más de 1 millón de visitas al día. Los errores reportados en los micrositios del banco se redujeron en un 20% y la retención de usuarios incrementó en un 10%. Especialista en solución de problemas y trabajo en equipo.",
@@ -480,43 +480,43 @@
             "habilidades": [
                 {
                     "habilidad": "Resolucion de problemas",
-                    "nivel": "95%"
+                    "nivel": "30"
                 },
                 {
                     "habilidad": "Multitasking",
-                    "nivel": "90%"
+                    "nivel": "90"
                 },
                 {
                     "habilidad": "Manejo de PC y Mac",
-                    "nivel": "80%"
+                    "nivel": "80"
                 },
                 {
                     "habilidad": "Oratoria",
-                    "nivel": "80%"
+                    "nivel": "40"
                 }
             ],
             "software": [
                 {
                     "software": "Microsoft Ofice",
-                    "nivel": "80%"
+                    "nivel": "80"
                 }
             ],
             "idiomas": [
                 {
                     "idioma": "Inglés",
-                    "nivel": "90%"
+                    "nivel": "90"
                 },
                 {
                     "idioma": "Portugués",
-                    "nivel": "50%"
+                    "nivel": "50"
                 },
                 {
                     "idioma": "Italiano",
-                    "nivel": "80%"
+                    "nivel": "80"
                 },
                 {
                     "idioma": "Coreano (hangul)한글",
-                    "nivel": "60%"
+                    "nivel": "60"
                 }
             ],
             "perfil_laboral": "Recepcionista con 4 años de experiencia en empresas de talla internacional. Responsable de la organización de la agenda de dos directores ejecutivos. Conocimientos de contabilidad y manejo de inventario. Recorté los gastos de oficina de 123 Corp. en un 15%. Sociable, proactiva y con atención al detalle.",
