@@ -22,8 +22,7 @@ selectorPerfiles.addEventListener('change', (event) => {
 })
 
 
-
-
+actualizarDatos(info, 0)
 
 
 /*codigo encargado de actualizar los datos del perfil*/
@@ -57,7 +56,7 @@ function actualizarDatos(perfilList, nPerfil) {
     actualizarEducacion(p, n);
 
     actualizarCertificados(p, n);
-    
+
 
     if (p.persona[n].objetivos_personales != false) {
         document.getElementById("objetivos").innerHTML = p.persona[n].objetivos_personales
@@ -142,7 +141,7 @@ function actualizarHabilidades(perfil, n) {
     }
 
 }
-console.log(info.persona[0].software[0].software)
+
 
 function actualizarSoftware(perfil, n) {
 
@@ -160,10 +159,6 @@ function actualizarSoftware(perfil, n) {
             add_li(software, nivel, "software");
 
         }
-
-
-
-
     } else {
         document.getElementById("seccion_software").style.display = "none"
     }
@@ -206,16 +201,6 @@ function actualizarIdiomas(perfil, n) {
  */
 
 function actualizarExperiencia(perfil, n) {
-
-    /**
-     * tengo que crear una funcion que me cree items
-     * en una lista desordenada
-     * y debe contener un articule class= "experiencia_laboral_item"
-     * dentro del article con p id="fecha"
-     * h3 puesto ocupado
-     * <p><span id="empresa">Empresa</span> <br> descripcion</p>
-     * 
-     */
 
     eliminar_li("experiencia_laboral");
 
@@ -286,14 +271,14 @@ function actualizarEducacion(perfil, n) {
 function actualizarCertificados(perfil, n) {
     eliminar_cert("certificados")
     if (perfil.persona[n].certificaciones.length > 0 & perfil.persona[n].certificaciones[0].especialidad != false) {
-        
+
         document.getElementById("seccion_certificaciones").style.display = "block"
 
         for (let i = 0; i < perfil.persona[n].certificaciones.length; i++) {
 
             var especialidad = perfil.persona[n].certificaciones[i].especialidad
             var institucion = perfil.persona[n].certificaciones[i].institucion
-            console.log(i+"index")
+            console.log(i + "index")
             add_cert(especialidad, institucion, "certificados");
 
         }
@@ -305,7 +290,7 @@ function actualizarCertificados(perfil, n) {
         document.getElementById("seccion_certificaciones").style.display = "none"
     }
 
-    
+
 
 }
 
@@ -377,13 +362,13 @@ function eliminar_li(id) {
 function eliminar_cert(id) {
 
     const cert = document.getElementById(id).querySelector("tbody").childElementCount
-    
-    
+
+
 
     for (let i = 0; i < cert; i++) {
-        
+
         document.getElementById(id).querySelector("tbody").deleteRow(0)
-        
+
     }
 
 }
@@ -408,8 +393,22 @@ function add_exp(fini, ffin, pues, emp, desc, id) {
         if (find_li(nuevoLi, id)) {
             var li = document.createElement('li');
             li.id = id;
+            if (fechaini != false & fechafin != false) {
+                li.innerHTML = '<article class="esperiencia_laboral_item"><p id="fecha">' + fechaini + " " + fechafin + '</p><h3 id="puesto">' + pues + '</h3><p><span id="empresa">' + emp + "</span> <br> " + desc + "</p>";
+            } else {
+                if (fechaini != false) {
+                    li.innerHTML = '<article class="esperiencia_laboral_item"><p id="fecha">Desde: ' + fechaini + '</p><h3 id="puesto">' + pues + '</h3><p><span id="empresa">' + emp + "</span> <br> " + desc + "</p>";
+                } else {
+                    if (fechafin != false) {
+                        li.innerHTML = '<article class="esperiencia_laboral_item"><p id="fecha">Hasta: ' + fechafin + '</p><h3 id="puesto">' + pues + '</h3><p><span id="empresa">' + emp + "</span> <br> " + desc + "</p>";
 
-            li.innerHTML = '<article class="esperiencia_laboral_item"><p id="fecha">' + fechaini + " " + fechafin + '</p><h3 id="puesto">' + pues + '</h3><p><span id="empresa">' + emp + "</span> <br> " + desc + "</p>";
+                    } else {
+                        li.innerHTML = '<article class="esperiencia_laboral_item"><p id="fecha"></p><h3 id="puesto">' + pues + '</h3><p><span id="empresa">' + emp + "</span> <br> " + desc + "</p>";
+
+                    }
+                }
+
+            }
             document.getElementById(id).appendChild(li);
         }
     }
@@ -427,11 +426,33 @@ function add_educ(fini, ffin, tit, inst, ciu, id) {
             var li = document.createElement('li');
             li.id = id;
             if (ciu != false) {
-                li.innerHTML = '<article class="educacion_item"><h3 id="titulo">' + tit + '</h3><p id="fecha">' + fechaini + " " + fechafin + '</p><span id="instituto">' + inst + ", " + ciu;
+                if (fechaini != false & fechafin != false) {
+                    li.innerHTML = '<article class="educacion_item"><h3 id="titulo">' + tit + '</h3><p id="fecha">' + fechaini + " " + fechafin + '</p><span id="instituto">' + inst + ", " + ciu;
+                } else {
+                    if (fechaini != false) {
+                        li.innerHTML = '<article class="educacion_item"><h3 id="titulo">' + tit + '</h3><p id="fecha">Desde: '+ fechaini + '</p><span id="instituto">' + inst + ", " + ciu;
+                    } else {
+                        if (fechafin != false) {
+                            li.innerHTML = '<article class="educacion_item"><h3 id="titulo">' + tit + '</h3><p id="fecha">Hasta: '+ fechafin + '</p><span id="instituto">' + inst + ", " + ciu;
+                        } else {
+                            li.innerHTML = '<article class="educacion_item"><h3 id="titulo">' + tit + '</h3><p id="fecha"> </p><span id="instituto">' + inst + ", " + ciu;
+                        }}
+                }
+                
             }
             else {
-                li.innerHTML = '<article class="educacion_item"><h3 id="titulo">' + tit + '</h3><p id="fecha">' + fechaini + " " + fechafin + '</p><span id="instituto">' + inst + ".";
-
+                if (fechaini != false & fechafin != false) {
+                    li.innerHTML = '<article class="educacion_item"><h3 id="titulo">' + tit + '</h3><p id="fecha">' + fechaini + " " + fechafin + '</p><span id="instituto">' + inst + ".";
+                } else {
+                    if (fechaini != false) {
+                        li.innerHTML = '<article class="educacion_item"><h3 id="titulo">' + tit + '</h3><p id="fecha">Desde: '+ fechaini + '</p><span id="instituto">' + inst + ".";
+                    } else {
+                        if (fechafin != false) {
+                            li.innerHTML = '<article class="educacion_item"><h3 id="titulo">' + tit + '</h3><p id="fecha">Hasta: '+ fechafin + '</p><span id="instituto">' + inst + ".";
+                        } else {
+                            li.innerHTML = '<article class="educacion_item"><h3 id="titulo">' + tit + '</h3><p id="fecha"> </p><span id="instituto">' + inst + ".";
+                        }}
+                }
             }
             document.getElementById(id).appendChild(li);
         }
@@ -443,36 +464,14 @@ function add_educ(fini, ffin, tit, inst, ciu, id) {
 function add_cert(esp, inst, id) {
     let nuevoLi = esp;
     let fechaini = inst;
-    /*
-
-    if (nuevoLi.length > 0) {
-        if (find_li(nuevoLi, id)) {
-            var li = document.createElement('li');
-            li.id = id;
-            if(ciu != false){
-                li.innerHTML = '<article class="educacion_item"><h3 id="titulo">'+tit+'</h3><p id="fecha">'+fechaini+" "+fechafin+'</p><span id="instituto">'+inst+", "+ciu;
-            }
-            else{
-                li.innerHTML = '<article class="educacion_item"><h3 id="titulo">'+tit+'</h3><p id="fecha">'+fechaini+" "+fechafin+'</p><span id="instituto">'+inst+".";
-            
-            }
-            document.getElementById(id).appendChild(li);
-        }
-    }
-    return false;
-    */
-    // Find a <table> element with id="myTable":
+  
     var table = document.getElementById(id).querySelector("tbody");
 
-    // Create an empty <tr> element and add it to the 1st position of the table:
     var row = table.insertRow(0);
 
-   
-    // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
 
-    // Add some text to the new cells:
     cell1.innerHTML = esp;
     cell2.innerHTML = inst;
 

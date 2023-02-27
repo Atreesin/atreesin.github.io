@@ -51,7 +51,7 @@
                     "nivel": "60%"
                 },
                 {
-                    "software": "access",
+                    "software": "Access",
                     "nivel": "50%"
                 }
             ],
@@ -150,8 +150,7 @@
                 }
             ],
             "software": [
-                {"software": false,
-                "nivel": false}
+                
             ],
             "idiomas": [
                 {
@@ -170,7 +169,7 @@
             "perfil_laboral": "theoretical physicist, mathemathics, nobel prize for physics philosopher, politician, formulator of the theory of relativity.",
             "experiencia": [
                 {
-                    "fecha_inicio": "1932",
+                    "fecha_inicio": false,
                     "fecha_fin": "1944",
                     "puesto": "Professor of Theoretical Physics",
                     "empresa": "Teaching",
@@ -429,8 +428,8 @@
                     "descripcion": "<ul><li>Escribí el código una página web con la capacidad de recibir a más de un millón de usuarios diariamente.</li><li>Responsable de crear un comparador de tarjetas de crédito que elevó las ventas de producto en un 15%.</li><li>Desarrollé una aplicación bancaria especializada en seguros de auto la cual recibió una calificación de 4.8 estrellas.</li></ul>"
                 },
                 {
-                    "fecha_inicio": "2016",
-                    "fecha_fin": "2017",
+                    "fecha_inicio": false,
+                    "fecha_fin": false,
                     "puesto": "Desarrollador Web",
                     "empresa": "Flame Analytics",
                     "descripcion": "<ul><li>A lo largo de mi estancia, participé en más de 15 proyectos digitales y colaboré con un equipo de diseñadores, copywriters creativos, project managers y Q&A testers.</li><li>Reduje el porcentaje de errores mensuales de la página de inicio del portal de la compañía en un 10%.</li><li>Como parte del comité de mejoras continuas de la empresa, colaboré para optimizar los tiempos de carga de la página web en un 15%.</li></ul>"         
