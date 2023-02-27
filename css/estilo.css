@@ -1,24 +1,39 @@
+:root {
+    --primary-color: hsl(125, 84%, 56%);
+    --text-color: hsl(0, 0%, 31%);
+    --bg-color: hsl(0, 0%, 90%);
+    --border-radius: 0.4em;
+    --transition: color 0.1s, background-color 0.2s ease-in-out;
+    --skill-bar-length: 0%
+}
+
 * {
-    
+
     margin: 0;
     padding: 0;
-    
+
     list-style: none;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing:border-box;
-    
+    box-sizing: border-box;
+
 }
+
+body {
+    background-color: #183153;
+}
+
 .contenido {
-    background-color: #acdeff;
-    
+    background-color: #ffffff;
+
 
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
 }
+
 header {
-    width: 100%;
+    display: grid;
     height: 50px;
     background-color: #242526;
     display: flex;
@@ -33,6 +48,7 @@ header {
     font-weight: bold;
     color: #ffffff;
 }
+
 .logo img {
     display: flex;
     max-width: 40px;
@@ -42,6 +58,7 @@ header {
     color: #bdd2f1;
     display: none;
 }
+
 .bars:hover {
     color: #d8ecff;
 }
@@ -63,6 +80,7 @@ header {
 .nav-bar ul li a:hover {
     background-color: #5aacf9;
 }
+
 .nav-bar ul li a.active {
     background-color: #387ce2;
 }
@@ -72,21 +90,24 @@ header {
 
 
 /*
-*           inicio
+*           inicio informacion personal
 */
+
 
 #foto_perfilLarge {
     border-radius: 100%;
-    align-items: center;
-    height: 25%;
-    width: 25%;
+
+    height: 100%;
+    width: 100%;
 }
+
 #foto_perfilMedium {
     border-radius: 100%;
     align-items: center;
-    height: 25%;
-    width: 25%;
+    height: 100%;
+    width: 100%;
 }
+
 #foto_perfilSmall {
     border-radius: 100%;
     align-items: center;
@@ -94,7 +115,7 @@ header {
     width: 25%;
 }
 
-/**
+
 .lateral {
     font-size: 25px;
     float: left;
@@ -102,60 +123,313 @@ header {
     margin-right: 1%;
     padding: 20px;
     width: 340px;
-    background-color: #f1f1f1;
+    background-color: #f0f1f3;
     min-block-size: 340px;
     border-color: #242526;
     border-bottom-width: 5px;
-   
+
 }
-.lateral::after{
+
+.lateral::after {
     content: "";
     display: table;
     clear: both;
 }
-.lateral h2{
+
+.lateral h2 {
+    margin-bottom: 0;
     font-size: x-large;
     box-sizing: border-box;
     min-width: max-content;
 }
-.lateral h3{
+
+.lateral h3 {
+    margin-bottom: 0;
+    padding-bottom: 1px;
     font-size: x-large;
 }
 
-.info_principal{
+.info_principal {
+    border-bottom: 2px solid rgb(0, 142, 185)
+}
+.info_adicional {
     border-bottom: 2px solid rgb(0, 142, 185)
 }
 
-.info_adicional{
-    border-bottom: 2px  green
+
+.info_principal #cp_localidad {
+    font-weight: bold;
+    margin-left: 10%;
+    margin-bottom: 3%;
 }
 
+/** ocupacion **/
+.info_principal .datos-ocupacion {
+    height: fit-content;
+    padding-top: 0;
+    margin: 0;
+}
 
-main{
-    float: right;
-    margin-top: 15%;
-    margin-left: 1%;
-    padding: 20px;
-    width: 75%;
-    background-color: #c92929;
+.info_principal .datos-ocupacion p {
+    display: inline-block;
+    margin-bottom: 15%;
+    margin-top: 0;
+    padding-top: 0px;
     height: auto;
+    flex: right;
 }
 
-footer{
+.info_principal .datos-ocupacion #ocupacion {
+    display: inline-block;
+    font-size: medium;
+}
+
+/** direccion **/
+.info_principal .datos-direccion p {
+    display: inline-block;
+
+
+}
+
+.info_principal .datos-direccion #direccion {
+    display: inline-block;
+
+
+}
+
+/** telefono **/
+.info_principal .datos-telefono p {
+    display: inline-block;
+    margin-bottom: 3%;
+
+}
+
+.info_principal .datos-telefono #telefono {
+    margin-left: 1%;
+    display: inline-block;
+    font-size: medium;
+}
+
+/** email **/
+.info_principal .datos-email p {
+    display: inline-block;
+
+}
+
+.info_principal .datos-email #email {
+    display: inline-block;
+    font-size: medium;
+    margin-left: 2%;
+    font-weight: 500;
+    font-style: italic;
+    color: #a200ff;
+}
+
+/** fecha **/
+.info_principal .fecha_nac p {
+    display: inline-block;
+
+}
+
+.info_principal .fecha_nac #fecha_nac {
+    display: inline-block;
+    margin-left: 2%;
+    font-style: italic;
+}
+
+/** nacionalidad **/
+.info_principal .nacionalidad p {
+    display: inline-block;
+
+}
+
+.info_principal .nacionalidad #nacionalidad {
+    display: inline-block;
+    margin-left: 2%;
+    margin-bottom: 3%;
+    font-weight: bold;
+
+}
+
+/**  informacion adicional  **/
+
+.info_adicional {
+    display: block;
+}
+
+/**habilidades**/
+#seccion_habilidades {
+    padding: 1em;
+    background-color: #faf3fa;
+    /** cambiar **/
+    border-color: 1px solid black;
+    border-radius: var(--border-radius);
+
+}
+
+
+
+
+.habilidades_valor,
+.habilidades_valor::after {
+    position: relative;
+    width: 175px;
+    height: 8px;
+    background-color: #888;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.habilidades_valor::after {
+    content: '';
+    position: absolute;
+    left: -175px;
+    background-color: var(--primary-color);
+    animation: skills-bar-fill 2s ease-in-out forwards;
+}
+
+
+
+
+.habilidades_valor--10::after {
+    --skill-bar-length: 10%;
+}
+
+.habilidades_valor--20::after {
+    --skill-bar-length: 20%;
+}
+
+.habilidades_valor--30::after {
+    --skill-bar-length: 30%;
+}
+
+.habilidades_valor--40::after {
+    --skill-bar-length: 40%;
+}
+
+.habilidades_valor--50::after {
+    --skill-bar-length: 50%;
+}
+
+.habilidades_valor--60::after {
+    --skill-bar-length: 60%;
+}
+
+.habilidades_valor--70::after {
+    --skill-bar-length: 70%;
+}
+
+.habilidades_valor--80::after {
+    --skill-bar-length: 80%;
+}
+
+.habilidades_valor--90::after {
+    --skill-bar-length: 90%;
+}
+
+.habilidades_valor--100::after {
+    --skill-bar-length: 100%;
+}
+
+
+
+/** software **/
+
+#seccion_software {
+    padding: 1em;
+    background-color: #faf3fa;
+    /** cambiar **/
+    border-color: 1px solid black;
+    border-radius: var(--border-radius);
+
+}
+
+
+/** idiomas  **/
+#seccion_idiomas {
+    padding: 1em;
+    background-color: #faf3fa;
+    border-color: 1px solid black;
+    border-radius: var(--border-radius);
+
+}
+
+/**             informacion main                  **/
+/**  perfil experiencia educacion objetivos       **/
+main {
+
+    
+    margin-top: 1%;
+    margin-left: 0;
+    margin-right: 1%;
+    padding: 5px;
+    width: 75%;
+    background-color: #f0f1f3;
+    height: max-content;
+}
+
+
+/** PERFIL **/
+main #seccion_perfil {
+    padding: 1em;
+    background-color: #faf3fa;
+    border-color: 1px solid black;
+    border-radius: var(--border-radius);
+}
+
+
+/** EXPERIENCIA **/
+main #seccion_experiencia {
+    padding: 1em;
+    background-color: #fde1fd;
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: var(--border-radius);
+}
+
+/** EDUCACION **/
+main #seccion_educacion {
+    padding: 1em;
+    background-color: #faf3fa;
+    border-color: 1px solid black;
+    border-radius: var(--border-radius);
+}
+
+/** certificaciones **/
+main #seccion_certificaciones {
+    padding: 1em;
+    background-color: #faf3fa;
+    border-color: 1px solid black;
+    border-radius: var(--border-radius);
+}
+
+/** OBJETIVOS **/
+main #seccion_objetivos {
+    padding: 1em;
+    background-color: #faf3fa;
+    border-color: 1px solid black;
+    border-radius: var(--border-radius);
+}
+
+
+footer {
     font-display: block;
-    float:none;
+    align-items: center;
+    height: 300px;
+    float: flex;
     width: 100%;
 }
 
 
-.large{
+.large {
     display: contents;
 
 }
-.medium{
+
+.medium {
     display: none;
 }
-.small{
+
+.small {
     display: none;
 }
 
@@ -167,30 +441,45 @@ footer{
 
 /*
 *
-*         seccion responsive 1200px 1080px 768px 480px 320px
+*         seccion responsive 1200px 1024px 768px 425px 320px
 *
 */
 
-@media(max-width:1200px){
+/************************/
+/**                    **/
+/**     LAPTOP L+      **/
+/**                    **/
+/************************/
 
-    
+@media(max-width:1200px) {
 
-    .large{
+
+
+    .large {
         display: contents;
     }
 
-    .medium{
+    .medium {
         display: none;
     }
-    .small{
+
+    .small {
         display: none;
     }
 
 }
 
 /* dejar de mostrar lateral */
-@media(max-width:1080px){
-    
+
+
+/*********************/
+/**                 **/
+/**     LAPTOP      **/
+/**                 **/
+/*********************/
+
+@media(max-width:1024px) {
+
     header {
         padding: 0px 30px;
     }
@@ -226,11 +515,11 @@ footer{
     .nav-bar.active {
         height: 60px;
         margin: 0;
-        
+
     }
 
     .nav-bar ul {
-        
+
         display: flex;
         width: fit-content;
         margin: 10px auto 0 auto;
@@ -246,21 +535,33 @@ footer{
         margin-bottom: 20px;
     }
 
-    
-    .large{
+
+    .large {
         display: none;
     }
-    .medium{
+
+    .medium {
         display: contents;
     }
-    .small{
+
+    .small {
         display: none;
     }
-   
+
 }
-@media(max-width:768px){
-    
+
+
+
+/*********************/
+/**                 **/
+/**     TABLET      **/
+/**                 **/
+/*********************/
+
+@media(max-width:768px) {
+
     header {
+        
         padding: 0px 30px;
     }
 
@@ -282,7 +583,7 @@ footer{
 
     .nav-bar {
         height: 0px;
-        position: absolute;
+        
         top: 50px;
         left: 0;
         right: 0;
@@ -312,21 +613,115 @@ footer{
         margin-bottom: 20px;
     }
 
-   
-    .large{
+
+    /** lateral **/
+
+    .contenido {
+        align-items: center;
+        display: block;
+    }
+
+    .lateral {
+        font-size: 25px;
+        display: grid;
+        margin-top: 0;
+        margin-right: 1%;
+        padding: 20px;
+        width: 100%;
+        background-color: #f0f1f3;
+        min-block-size: 340px;
+        border-color: #242526;
+        border-bottom-width: 5px;
+        
+        display: block;
+        
+        align-items: center;
+       
+        
+    }
+
+    .info_principal{
+        float:right;
+        
+        align-items: center;
+    }
+    .info_adicional{
+        position:fixed
+    }
+
+    .lateral h2 {
         display: none;
     }
-    .medium{
+
+    #nombre_apellido {
+        top: 10;
+        color: #292929;
+        
+    }
+
+    .datos-ocupacion {
+        
+        height: min-content;
+        margin: 0;
+    }
+    .datos.datos-ocupacion p{
+       height: min-content;         
+    }
+
+    #foto_perfilMedium {
+
+        border-radius: 10%;
+        align-items: center;
+        width: 5em;
+        height: 5em;
+    }
+
+
+
+
+    
+    
+
+
+
+
+
+    .info_principal {
+        border-bottom: none
+    }
+    .info_adicional.active {
+        display: none;
+        border-bottom: none
+    }
+
+
+
+
+    .large {
+        display: none;
+    }
+
+    .medium {
         display: contents;
     }
-    .small{
+
+    .small {
         display: none;
     }
-    
+
 }
-@media(max-width:480px){
-   
-    
+
+
+
+/*************************/
+/**                     **/
+/**     CELULAR L       **/
+/**                     **/
+/*************************/
+
+@media(max-width:425px) {
+
+
     header {
         padding: 0px 3px;
     }
@@ -357,10 +752,12 @@ footer{
         background-color: #2e2f34;
         transition: 0.5;
         overflow: hidden;
+        
     }
 
     .nav-bar.active {
         height: 370px;
+        
     }
 
     .nav-bar ul {
@@ -380,22 +777,109 @@ footer{
     }
 
 
-    .large{
+
+    .contenido {
+        
+        display: block;
+    }
+
+    .lateral {
+        font-size: 25px;
+        
+        margin-top: 0;
+        margin-right: 1%;
+        padding: 20px;
+        width: 100%;
+        background-color: #f0f1f3;
+        min-block-size: 340px;
+        
+        border-color: #242526;
+        border-bottom-width: 5px;
+        
+        display: block;
+        
+        align-items: center;
+       
+        
+    }
+
+    .lateral h2 {
         display: none;
     }
-    .medium{
+
+    #nombre_apellido {
+        
+        color: #292929;
+        
+    }
+
+    .datos-ocupacion {
+        
+        height: min-content;
+        margin: 0;
+    }
+    .datos.datos-ocupacion p{
+       height: min-content;         
+    }
+
+    #foto_perfilMedium {
+
+        border-radius: 10%;
+        align-items: center;
+        width: 5em;
+        height: 5em;
+    }
+
+
+
+    .info_adicional{
+        display: block;
+        position: static;
+        
+    }
+
+    .main{
+        display: block;
+    }
+    
+
+    .large {
         display: none;
     }
-    .small{
+
+    .medium {
+        display: none;
+    }
+
+    .small {
         display: contents;
     }
 }
-@media(max-width:320px){
-   
-    
+
+
+
+/************************/
+/**                    **/
+/**     CELULAR S      **/
+/**                    **/
+/************************/
+
+@media(max-width:320px) {
+
+
     header {
+        
+        max-width: 320px;
         padding: 0px 30px;
+        width: 100%;
     }
+
+    .contenido {
+        display: block;
+
+    }
+
+
 
     .bars {
         display: block;
@@ -419,14 +903,14 @@ footer{
         top: 50px;
         left: 0;
         right: 0;
-        width: 100vw;
+        
         background-color: #2e2f34;
         transition: 0.5;
         overflow: hidden;
     }
 
     .nav-bar.active {
-        height: 370px;
+        height: 320px;
     }
 
     .nav-bar ul {
@@ -446,16 +930,96 @@ footer{
     }
 
 
+    .contenido {
+        max-width: 320px;
+        display: block;
+    }
 
-    .large{
+    .lateral {
+        font-size: 25px;
+        display: block;
+        margin-top: 0;
+        margin-right: 1%;
+        padding: 20px;
+        width: 100%;
+        background-color: #f0f1f3;
+        max-width: 320px;
+        border-color: #242526;
+        border-bottom-width: 5px;
+        
+        display: block;
+        
+        align-items: center;
+       
+        
+    }
+
+    .lateral h2 {
         display: none;
     }
-    .medium{
+    .main {
+        max-width: 320px;
+        margin-top: 1%;
+        margin-left: 0;
+        margin-right: 1%;
+        padding: 5px;
+        width: 75%;
+        background-color: #f0f1f3;
+        height: max-content;
+    }
+
+    #nombre_apellido {
+        
+        color: #292929;
+        
+    }
+
+    .datos-ocupacion {
+        
+        height: min-content;
+        margin: 0;
+    }
+    .datos.datos-ocupacion p{
+       height: min-content;         
+    }
+
+    .info_adicional{
+        display: block;
+        overflow: hidden;
+    }
+
+    #foto_perfilMedium {
+
+        border-radius: 10%;
+        align-items: center;
+        width: 5em;
+        height: 5em;
+    }
+
+
+
+
+
+
+
+    .large {
         display: none;
     }
-    .small{
+
+    .medium {
+        display: none;
+    }
+
+    .small {
         display: contents;
     }
-   
-    
+
+
+}
+
+
+@keyframes skills-bar-fill {
+    to {
+        transform: translateX(var(--skill-bar-length));
+    }
 }
