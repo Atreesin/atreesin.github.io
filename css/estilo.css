@@ -792,7 +792,7 @@ footer {
         width: 100%;
         background-color: #f0f1f3;
         min-block-size: 340px;
-        
+        max-block-size: 425px;
         border-color: #242526;
         border-bottom-width: 5px;
         
