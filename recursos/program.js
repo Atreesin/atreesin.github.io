@@ -319,7 +319,7 @@ function add_li(h, v, id) {
         if (find_li(nuevoLi, id)) {
             var li = document.createElement('li');
             li.id = id;
-            li.innerHTML = '<p id= "' + id + '">' + h + '</p> <p id="valor">' + v + "<p>";
+            li.innerHTML = '<p id= "' + id + '">' + h + '</p><div class="habilidades_valor habilidades_valor--'+ v +'">'+ v + "</div>";
             document.getElementById(id).appendChild(li);
         }
     }
