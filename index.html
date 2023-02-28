@@ -27,10 +27,39 @@
         <div class="logo">
             <img src="./recursos/logo.png" alt="logo">
         </div>
-        <div class="adicional">
-            <i class="fa fa-bars fa-2x" data-fa-transform="shrink-5" data-fa-mask="fa fa-square"
-                data-fa-mask-id="menu"></i>
+
+
+
+        <div class="wrapper">
+            <button class="adicional">
+                <i class="fa fa-plus fa-2x" data-fa-transform="shrink-8" data-fa-mask="fa fa-circle"
+                    data-fa-mask-id="adicional"></i>
+            </button>
+            <ul class="list">
+                <li class="item">
+                    <a id="link_habilidades" class="link habilidades">
+                        <i class="fa-solid fa-star-half" data-fa-transform="shrink-5" data-fa-mask="fa-solid fa-star"
+                            data-fa-mask-id="icono_habilidades"></i></h2>
+
+                    </a>
+                </li>
+                <li class="item" style="--d: 0.15s">
+                    <a id="link_software" class="link software">
+                        <i class="fa-solid fa-computer" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-square"
+                            data-fa-mask-id="icono_software"></i>
+                    </a>
+                </li>
+                <li class="item" style="--d: 0.35s">
+                    <a id="link_idiomas" class="link idiomas">
+                        <i class="fa-solid fa-language" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-comment"
+                            data-fa-mask-id="icono_idiomas"></i>
+                    </a>
+                </li>
+
+            </ul>
         </div>
+
+
         <div class="bars">
             <i class="fa fa-bars fa-2x" data-fa-transform="shrink-5" data-fa-mask="fa fa-square"
                 data-fa-mask-id="menu"></i>
@@ -46,205 +75,275 @@
             </ul>
         </nav>
     </header>
+
+
     <a name="inicio"></a>
     <div class="contenido">
-        
-        <section class="lateral">
-          
-            <section class="info_principal" aria-label="Foto de perfil y Datos personales">
-                <div class="foto-perfil">
-                    <div class="large">
-                        <img id="foto_perfilLarge" src="#" alt="foto de perfil Large">
+        <div class="contenedor_lateral">
+            <section class="lateral">
+                <div class="datos_principales_info">
+                    <section class="info_principal" aria-label="Foto de perfil y Datos personales">
+                        <div class="foto-perfil">
+                            <div class="large">
+                                <img id="foto_perfilLarge" src="#" alt="foto de perfil Large">
+                            </div>
+                            <div class="medium">
+                                <img id="foto_perfilMedium" src="#" alt="foto de perfil Medium">
+                            </div>
+                            <div class="small">
+                                <img id="foto_perfilSmall" src="#" alt="foto de perfil Small">
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="bloque">
+                            <div class="datos-personales">
+                                <h2><i class="fa-solid fa-user-tie"></i> DATOS PERSONALES</h2>
+                            </div>
+
+                            <div class="nombre">
+                                <h3>
+                                    <p id="nombre_apellido">Nombre y apellido
+                                </h3>
+                            </div>
+
+                            <div class="datos-ocupacion">
+                                <p><i class="fa fa-briefcase" data-fa-transform="shrink-11 down-5 right-2.5"
+                                        data-fa-mask="fa fa-user" data-fa-mask-id="ocupacion"></i>
+                                <p id="ocupacion">Ocupación</p>
+                                </p>
+                            </div>
+
+                            <div class="datos-direccion">
+                                <p><i class="fa fa-house-user" data-fa-transform="shrink-6"
+                                        data-fa-mask="fa-solid fa-circle" data-fa-mask-id="direccion"></i>
+                                <p id="direccion">Calle Número</p>
+                                <p id="cp_localidad">Código postal, Localidad</p>
+                                </p>
+                            </div>
+
+                            <div class="datos-telefono">
+                                <p><i class="fa-solid fa-briefcase" data-fa-transform="shrink-11 down-5 right-2.5"
+                                        data-fa-mask="fasolid fa-user" data-fa-mask-id="ocupacion"></i>
+                                <p id="telefono">Número de teléfono</p>
+                                </p>
+                            </div>
+
+                            <div class="datos-email">
+                                <p><i class="fa-solid fa-at" data-fa-transform="shrink-10 down-3 right-6"
+                                        data-fa-mask="fa-solid fa-envelope" data-fa-mask-id="mail"></i>
+                                <p id="email">email@mail.com</p>
+                                </p>
+                            </div>
+                            <p><br></p>
+                            <div class="fecha_nac">
+                                <p><i class="fa-regular fa-calendar"></i>
+                                <p id="fecha_nac">00/00/0000</p>
+                                </p>
+                            </div>
+
+                            <div class="nacionalidad">
+                                <p><i class="fa-solid fa-earth-americas" data-fa-transform="shrink-5"
+                                        data-fa-mask="fa-solid fa-circle" data-fa-mask-id="nacionalidad"></i>
+                                <p id="nacionalidad">xx</p>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </section>
+                </div>
+
+                <aside class="info_adicional">
+
+                    <div class="info_habilidades">
+                        <section id="seccion_habilidades" aria-label="Habilidades">
+                            <div class="habilidades">
+                                <h2><i class="fa-solid fa-star-half" data-fa-transform="shrink-5"
+                                        data-fa-mask="fa-solid fa-star"
+                                        data-fa-mask-id="icono_habilidades"></i>HABILIDADES</h2>
+                                <ul id="habilidades">
+
+                                </ul>
+                            </div>
+                        </section>
                     </div>
-                    <div class="medium">
-                        <img id="foto_perfilMedium" src="#" alt="foto de perfil Medium">
+
+
+
+                    <div class="info_software">
+                        <section id="seccion_software" aria-label="Software">
+                            <h2><i class="fa-solid fa-computer" data-fa-transform="shrink-8"
+                                    data-fa-mask="fa-solid fa-square" data-fa-mask-id="software"></i>SOFTWARE</h2>
+                            <ul id="software">
+                            </ul>
+                        </section>
                     </div>
-                    <div class="small">
-                        <img id="foto_perfilSmall" src="#" alt="foto de perfil Small">
+
+
+                    <div class="info_idiomas">
+                        <section id="seccion_idiomas" aria-label="Idiomas">
+
+                            <div class="idiomas">
+                                <h2><i class="fa-solid fa-language" data-fa-transform="shrink-8"
+                                        data-fa-mask="fa-solid fa-comment" data-fa-mask-id="idiomas"></i>IDIOMAS</h2>
+                                <ul id="idiomas">
+
+                                </ul>
+                            </div>
+
+
+                        </section>
                     </div>
 
-
-
-
-                </div>
-
-                <div class="datos-personales">
-                    <h2><i class="fa-solid fa-user-tie"></i> DATOS PERSONALES</h2>
-                </div>
-
-                
-                <h3>
-                    <p id="nombre_apellido">Nombre y apellido
-                </h3>
-                <div class="datos-ocupacion">
-                    <p><i class="fa fa-briefcase" data-fa-transform="shrink-11 down-5 right-2.5"
-                            data-fa-mask="fa fa-user" data-fa-mask-id="ocupacion"></i>
-                    <p id="ocupacion">Ocupación</p>
-                    </p>
-                </div>
-
-                <div class="datos-direccion">
-                    <p><i class="fa fa-house-user" data-fa-transform="shrink-6" data-fa-mask="fa-solid fa-circle"
-                            data-fa-mask-id="direccion"></i>
-                    <p id="direccion">Calle Número</p>
-                    <p id="cp_localidad">Código postal, Localidad</p>
-                    </p>
-                </div>
-
-                <div class="datos-telefono">
-                    <p><i class="fa-solid fa-briefcase" data-fa-transform="shrink-11 down-5 right-2.5"
-                            data-fa-mask="fasolid fa-user" data-fa-mask-id="ocupacion"></i>
-                    <p id="telefono">Número de teléfono</p>
-                    </p>
-                </div>
-
-                <div class="datos-email">
-                    <p><i class="fa-solid fa-at" data-fa-transform="shrink-10 down-3 right-6"
-                            data-fa-mask="fa-solid fa-envelope" data-fa-mask-id="mail"></i>
-                    <p id="email">email@mail.com</p>
-                    </p>
-                </div>
-                <p><br></p>
-                <div class="fecha_nac">
-                    <p><i class="fa-regular fa-calendar"></i>
-                    <p id="fecha_nac">00/00/0000</p>
-                    </p>
-                </div>
-
-                <div class="nacionalidad">
-                    <p><i class="fa-solid fa-earth-americas" data-fa-transform="shrink-5"
-                        data-fa-mask="fa-solid fa-circle" data-fa-mask-id="nacionalidad"></i>
-                    <p id="nacionalidad">xx</p>
-                    </p>
-                </div>
+                </aside>
 
             </section>
-            <aside class="info_adicional">
-                <section id="seccion_habilidades" aria-label="Habilidades">
-                    <div class="habilidades">
-                        <h2><i class="fa-solid fa-star-half" data-fa-transform="shrink-5"
-                                data-fa-mask="fa-solid fa-star" data-fa-mask-id="icono_habilidades"></i>HABILIDADES</h2>
-                        <ul id="habilidades">
-                            
-                        </ul>
-                    </div>
-                </section>
+        </div>
 
-                <section id="seccion_software" aria-label="Software">
-                    <h2><i class="fa-solid fa-computer" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-square"
-                            data-fa-mask-id="software"></i>SOFTWARE</h2>
-                    <ul id="software">
-                    </ul>
-                </section>
-                
-                <section id="seccion_idiomas" aria-label="Idiomas">
-                    <div class="idiomas">
-                        <h2><i class="fa-solid fa-language" data-fa-transform="shrink-8"
-                                data-fa-mask="fa-solid fa-comment" data-fa-mask-id="idiomas"></i>IDIOMAS</h2>
-                        <ul id="idiomas">
-
-                        </ul>
-                    </div>
-                </section>
-            </aside>
-
-        </section>
-        <main>
-            <a name="perfil"></a>
-            <section id="seccion_perfil" aria-label="Perfil">
-                <div class="perfil">
-                    <h2><i class="fa fa-circle-info" data-fa-transform="shrink-11 down-5 right-2.5"
-                            data-fa-mask="fa-solid fa-user" data-fa-mask-id="perfil"></i>PERFIL</h2>
-                    <p id="perfil">Breve descripción sobre tí</p>
+        <div class="contenedor_main">
+            <main>
+                <a name="perfil"></a>
+                <div class="contenedor_perfil">
+                    <section id="seccion_perfil" aria-label="Perfil">
+                        <div class="perfil">
+                            <h2><i class="fa fa-circle-info" data-fa-transform="shrink-11 down-5 right-2.5"
+                                    data-fa-mask="fa-solid fa-user" data-fa-mask-id="perfil"></i>PERFIL</h2>
+                            <p id="perfil">Breve descripción sobre tí</p>
+                        </div>
+                    </section>
                 </div>
-            </section>
 
-            <a name="experiencia-laboral"></a>
-            <section id="seccion_experiencia" aria-label="Experiencia laboral">
-                <div class="experiencia-laboral">
-                    <h2><i class="fa-solid fa-briefcase" data-fa-transform="shrink-11 down-5 right-2.5"
-                            data-fa-mask="fa-solid fa-user" data-fa-mask-id="experiencia_laboral"></i>EXPERIENCIA
-                        LABORAL
-                    </h2>
-                    <ul id="experiencia_laboral">
-                        <li>
-                            <article class="experiencia_laboral_item">
-                                <time>fecha</time>
-                                <h3>Puesto ocupado</h3>
-                                <p><span>Empresa</span> <br> Breve descripción del puesto</p>
-                            </article>
-                        </li>
-                    </ul>
 
+                <a name="experiencia-laboral"></a>
+                <div class="contenedor_experiencia">
+                    <section id="seccion_experiencia" aria-label="Experiencia laboral">
+                        <div class="experiencia-laboral">
+                            <h2><i class="fa-solid fa-briefcase" data-fa-transform="shrink-11 down-5 right-2.5"
+                                    data-fa-mask="fa-solid fa-user"
+                                    data-fa-mask-id="experiencia_laboral"></i>EXPERIENCIA
+                                LABORAL
+                            </h2>
+                            <ul id="experiencia_laboral">
+                                <li>
+                                    <article class="experiencia_laboral_item">
+                                        <time>fecha</time>
+                                        <h3>Puesto ocupado</h3>
+                                        <p><span>Empresa</span> <br> Breve descripción del puesto</p>
+                                    </article>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </section>
                 </div>
-            </section>
 
-            <a name="educacion"></a>
-            <section id="seccion_educacion" aria-label="Educacion y Titulos obtenidos">
-                <div class="educacion">
-                    <h2><i class="fa-solid fa-award" data-fa-transform="shrink-13 down-5 right-2.5"
-                            data-fa-mask="fa-solid fa-user-graduate" data-fa-mask-id="educacion"></i>EDUCACION</h2>
 
-                    <ul id="educacion">
-                        <li>
-                            <article class="educacion_item">
-                                <h3>Especialidad/titulo</h3>
-                                <time>fecha</time>
-                                <p>Instituto, Ciudad</p>
-                            </article>
-                        </li>
-                    </ul>
+                <a name="educacion"></a>
+                <div class="contenedor_educacion">
+                    <section id="seccion_educacion" aria-label="Educacion y Titulos obtenidos">
+                        <div class="educacion">
+                            <h2><i class="fa-solid fa-award" data-fa-transform="shrink-13 down-5 right-2.5"
+                                    data-fa-mask="fa-solid fa-user-graduate" data-fa-mask-id="educacion"></i>EDUCACION
+                            </h2>
+
+                            <ul id="educacion">
+                                <li>
+                                    <article class="educacion_item">
+                                        <h3>Especialidad/titulo</h3>
+                                        <time>fecha</time>
+                                        <p>Instituto, Ciudad</p>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
-            </section>
 
-            <a name="certificaciones"></a>
-            <section id="seccion_certificaciones" aria-label="Certificaciones obtenidas">
-                <h2><i class="fa fa-award" data-fa-transform="shrink-9" data-fa-mask="fa-solid fa-certificate"
-                        data-fa-mask-id="certificaciones"></i>CERTIFICACIONES</h2>
-                <table id="certificados" class="certificados">
-                    <thead>
-                        <tr>
-                            <th>Especialidad</th>
-                            <th>Institución</th>
-                        </tr>
-                    </thead>
-                    <tbody>
 
-                        <tr>
-                            <td>nombre del certificado</td>
-                            <td>institucion emisora</td>
-                        </tr>
+                <a name="certificaciones"></a>
+                <div class="contenedor_certificaciones">
+                    <section id="seccion_certificaciones" aria-label="Certificaciones obtenidas">
+                        <h2><i class="fa fa-award" data-fa-transform="shrink-9" data-fa-mask="fa-solid fa-certificate"
+                                data-fa-mask-id="certificaciones"></i>CERTIFICACIONES</h2>
+                        <table id="certificados" class="certificados">
+                            <thead>
+                                <tr>
+                                    <th>Especialidad</th>
+                                    <th>Institución</th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
-                    </tbody>
-                </table>
+                                <tr>
+                                    <td>nombre del certificado</td>
+                                    <td>institucion emisora</td>
+                                </tr>
 
-            </section>
+                            </tbody>
+                        </table>
 
-            <a name="objetivos"></a>
-
-            <section id="seccion_objetivos" aria-label="Objetivos personales">
-                <div class="objetivos">
-                    <h2><i class="fa fa-magnifying-glass-location" data-fa-transform="shrink-5"
-                            data-fa-mask="fa-solid fa-square" data-fa-mask-id="objetivos_personales"></i>OBJETIVOS
-                        PERSONALES</h2>
-                    <P id="objetivos">Breve descripción de tus objetivos personales.</P>
+                    </section>
                 </div>
-            </section>
-        </main>
+
+
+                <a name="objetivos"></a>
+                <div class="contenedor_objetivos">
+                    <section id="seccion_objetivos" aria-label="Objetivos personales">
+                        <div class="objetivos">
+                            <h2><i class="fa fa-magnifying-glass-location" data-fa-transform="shrink-5"
+                                    data-fa-mask="fa-solid fa-square"
+                                    data-fa-mask-id="objetivos_personales"></i>OBJETIVOS
+                                PERSONALES</h2>
+                            <P id="objetivos">Breve descripción de tus objetivos personales.</P>
+                        </div>
+                    </section>
+                </div>
+
+            </main>
+        </div>
+
     </div>
-    <footer>
-                
-        <select class="perfiles" name="perfiles" id="perfiles">
-            <option value="">--elija un perfil--</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
 
-        </select>
-        
+    <footer>
+        <div class="footer">
+            <div class="alumno">
+                <p>Proyecto final Integrador</p>
+                <p>Autor: <br>Fernando A. Franco</p>
+                <p>Argentina Programa 4.0</p>
+                <p>Front end Academy - 2022</p>
+
+            </div>
+
+            <div class="bloque_selector">
+                <div class="texto_derecho">
+                    <p>Puede seleccionar otro curriculum para mostrar:</p>
+                </div>
+
+
+
+                <div class="selector">
+                    <select class="perfiles" name="perfiles" id="perfiles">
+                        <p></p>
+                        <option value="">--elija un perfil--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+
+                    </select>
+                </div>
+
+            </div>
+
+        </div>
+
+
     </footer>
+
     <script type="module" src="./recursos/program.js"></script>
     <script src="./recursos/navegacion_y_animaciones.js"></script>
 </body>
