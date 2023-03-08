@@ -47,7 +47,14 @@ table {
  }
 
 
-
+.titulo_principal{
+    padding: 1em;
+    width: 100%;
+    background-color: #888;
+    text-align: center;
+    font-size: small;
+    font-style: inherit;
+}
 
 .contenido {
     background-color: #ffffff;
@@ -432,7 +439,9 @@ main #seccion_perfil {
     border: 1px solid rgb(109, 109, 109);
     border-radius: var(--border-radius);
 }
-
+main #seccion_perfil h2{
+    margin-bottom: 1em;
+}
 
 /** EXPERIENCIA **/
 main #seccion_experiencia {
@@ -441,6 +450,24 @@ main #seccion_experiencia {
     background-color: #e1edf3;
     border: 1px solid rgb(109, 109, 109);
     border-radius: var(--border-radius);
+}
+
+main #seccion_experiencia #fecha{
+    margin-top: 1.3em;
+    margin-bottom: 0.5em;
+    color: #0063f8;
+    font-style: italic;
+}
+
+main #seccion_experiencia #puesto{
+    margin-bottom: 0.25em;
+}
+
+main #seccion_experiencia span{
+    color: #ce9670;
+}
+main #seccion_experiencia p{
+    margin-bottom: 0.5em;
 }
 
 /** EDUCACION **/
@@ -452,6 +479,18 @@ main #seccion_educacion {
     border-radius: var(--border-radius);
 }
 
+main #seccion_educacion #titulo{
+    margin-top: 1.2em;
+}
+
+main #seccion_educacion #fecha{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #0063f8;
+    font-style: italic;
+}
+
+
 /** certificaciones **/
 main #seccion_certificaciones {
     margin-top:3%;
@@ -461,6 +500,10 @@ main #seccion_certificaciones {
     border-radius: var(--border-radius);
 }
 
+main #seccion_certificaciones h2{
+    margin-bottom: 0.6em;
+}
+
 /** OBJETIVOS **/
 main #seccion_objetivos {
     margin-top:3%;
@@ -468,6 +511,10 @@ main #seccion_objetivos {
     background-color: #e1edf3;
     border: 1px solid rgb(109, 109, 109);
     border-radius: var(--border-radius);
+}
+
+main #seccion_objetivos h2{
+    margin-bottom: 1em;
 }
 
 
@@ -1265,6 +1312,9 @@ main #seccion_objetivos {
         
 
     }
+    .info_adicional h2 {
+        display: contents;
+    }
 
     .contenedor_main{
         display: flex;
@@ -1383,9 +1433,9 @@ main #seccion_objetivos {
     }
 
     .lateral h2 {
-        display: none;
+        display: contents;
     }
-
+    
     .contenedor_main{
         display: flex;
     }
@@ -1420,7 +1470,7 @@ main #seccion_objetivos {
         display: block;
         overflow: hidden;
     }
-
+    
     #foto_perfilMedium {
 
         border-radius: 10%;
