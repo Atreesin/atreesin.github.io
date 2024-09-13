@@ -1,5 +1,5 @@
 
-import informacion from './informacion.json' assert {type: 'json'};
+import informacion from './informacion.json'
 
 
 const info = informacion
